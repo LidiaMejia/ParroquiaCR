@@ -46,43 +46,6 @@ case "logout":
     include_once "controllers/security/logout.control.php";
     die();
 
-//*NUEVA URL  
-case "ficha": //*Nombre de la URL en minuscula, sin espacios ni caracteres especiales
-    include_once "controllers/ficha.control.php"; //*Con .control se sabe que se esta trabajando en el control de la ficha. NOMENCLATURA
-    die(); //*Muere el proceso. Evita que llegue al ultimo punto de ERROR "La pagina no esta disponible"
-
-case "colores":
-    include_once "controllers/mantenimientos/colores.control.php";
-    die();
-
-case "color":
-    include_once "controllers/mantenimientos/color.control.php";
-    die(); 
-    
- case "libros":
-    include_once "controllers/mantenimientos/libros.control.php";
-    die();
-
- case "libro":
-    include_once "controllers/mantenimientos/libro.control.php";
-    die();
-
- case "parqueos":
-    include_once "controllers/mantenimientos/parqueos.control.php";
-    die();
-    
- case "parqueo":
-    include_once "controllers/mantenimientos/parqueo.control.php";
-    die();
-
- case "centroscostos":
-    include_once "controllers/mantenimientos/centroscostos.control.php";
-    die();
-
- case "centrocostos":
-    include_once "controllers/mantenimientos/centrocostos.control.php";
-    die();
-
  //En la carpeta security para el registro de usuarios
  case "register":
     include_once "controllers/security/register.control.php";
@@ -137,19 +100,6 @@ case "programa":
     ($logged)?
       include_once "controllers/security/programa.control.php":
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
-    die();
-
-case "categorias":
-    ($logged)?
-      include_once "controllers/mantenimientos/categorias.control.php":
-      mw_redirectToLogin($_SERVER["QUERY_STRING"]);
-    die();
-
-//*Para agregar una nueva categoria
-case "categoria":
-    ($logged)?
-        include_once "controllers/mantenimientos/categoria.control.php":
-        mw_redirectToLogin($_SERVER["QUERY_STRING"]);
     die();
 
  //*Seguridad
