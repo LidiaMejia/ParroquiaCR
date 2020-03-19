@@ -13,9 +13,9 @@
  * @link http://url.com
  */
 $server = "127.0.0.1";
-$user = "dynauser";
-$pswd = "fr4nc1scanus";
-$database = "dynapolls";
+$user = "userparr";
+$pswd = "r3suc1t4d0";
+$database = "parroquia";
 $port = "3306"; 
 
 $emailHost = 'email-smtp.us-west-2.amazonaws.com';
