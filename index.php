@@ -17,7 +17,7 @@ session_start();
 
 require_once "libs/utilities.php";
 
-$pageRequest = "home";
+$pageRequest = "index"; //*Pagina de Inicio de la Parroquia
 
 if (isset($_GET["page"])) {
     $pageRequest = $_GET["page"];
@@ -46,10 +46,59 @@ case "logout":
     include_once "controllers/security/logout.control.php";
     die();
 
- //En la carpeta security para el registro de usuarios
+ //*En la carpeta security para el registro de usuarios
  case "register":
     include_once "controllers/security/register.control.php";
     die();
+
+  //*Paginas Publicas de la Parroquia
+  case "juvenil":
+    include_once "controllers/parroquia/juvenil.control.php";
+  die();
+
+  case "matrimonio":
+    include_once "controllers/parroquia/matrimonio.control.php";
+  die();
+
+  case "misionera":
+    include_once "controllers/parroquia/misionera.control.php";
+  die();
+
+  case "nosotros":
+    include_once "controllers/parroquia/nosotros.control.php";
+  die();
+
+  case "oficinaParroquial":
+    include_once "controllers/parroquia/oficinaParroquial.control.php";
+  die();
+
+  case "pascual":
+    include_once "controllers/parroquia/pascual.control.php";
+  die();
+
+  case "pastorales":
+    include_once "controllers/parroquia/pastorales.control.php";
+  die();
+
+  case "plataforma":
+    include_once "controllers/parroquia/plataforma.control.php";
+  die();
+
+  case "principalSacra":
+    include_once "controllers/parroquia/principalSacra.control.php";
+  die();
+
+  case "samaritana":
+    include_once "controllers/parroquia/samaritana.control.php";
+  die();
+
+  case "servicios":
+    include_once "controllers/parroquia/servicios.control.php";
+  die();
+
+  case "uncionDeLosEnf":
+    include_once "controllers/parroquia/uncionDeLosEnf.control.php";
+  die();
 }
 
 //Este switch se encarga de todo el enrutamiento que ocupa login
