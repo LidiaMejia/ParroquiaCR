@@ -27,6 +27,7 @@ if (isset($_GET["page"])) {
 //Siempre
 require_once "controllers/mw/verificar.mw.php";
 require_once "controllers/mw/site.mw.php";
+//require_once "controllers/infinito/mw/cart.mw.php"; //Para el contador del carrito y pasar de anonima a autenticada
 
 // aqui no se toca jajaja la funcion de este index es
 // llamar al controlador adecuado para manejar el
@@ -99,6 +100,23 @@ case "logout":
   case "uncionDeLosEnf":
     include_once "controllers/parroquia/uncionDeLosEnf.control.php";
   die();
+
+  /************* CARRETILLA DE COMPRA ***********/
+  case "addToCart":
+    include_once "controllers/infinito/addToCart.control.php";
+   die();
+
+   case "rmvToCart":
+    include_once "controllers/infinito/rmvToCart.control.php";
+   die();
+
+   case "rmvAllCart":
+    include_once "controllers/infinito/rmvAllCart.control.php";
+   die();
+
+   case "cartAnon":
+    include_once "controllers/infinito/cartAnon.control.php";
+   die();
 }
 
 //Este switch se encarga de todo el enrutamiento que ocupa login

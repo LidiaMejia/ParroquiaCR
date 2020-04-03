@@ -26,6 +26,7 @@
             $_SESSION["userScreenName"] = "";
             $_SESSION["userEmail"] = "";
             $_SESSION["userType"] = "";
+            $_SESSION["cart_anon_UID"] = ''; //Unique ID para carretilla anonima
         }
     }
     function mw_redirectToLogin($to){
