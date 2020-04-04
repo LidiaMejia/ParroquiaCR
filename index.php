@@ -87,6 +87,55 @@ case "color":
  case "register":
     include_once "controllers/security/register.control.php";
     die();
+////////////////////////////////////////////////////////////////////////////////////////////
+
+case "actividadesLiturgicas":
+    include_once "controllers/parroquia/actividadesLiturgicas.control.php";
+    die();
+
+case "bautismo":
+    include_once "controllers/parroquia/bautismo.control.php";
+    die();
+
+case "comunidades":
+    include_once "controllers/parroquia/comunidades.control.php";
+    die();
+
+case "confesiones":
+    include_once "controllers/parroquia/confesiones.control.php";
+    die();
+
+case "confirmacion":
+    include_once "controllers/parroquia/confirmacion.control.php";
+    die();
+
+case "dimensiones":
+    include_once "controllers/parroquia/dimensiones.control.php";
+    die();
+
+case "eucaristia":
+    include_once "controllers/parroquia/eucaristia.control.php";
+    die();
+
+case "familiar":
+    include_once "controllers/parroquia/familiar.control.php";
+    die();
+
+case "formulario":
+    include_once "controllers/parroquia/formulario.control.php";
+    die();
+
+case "formularioEdu":
+    include_once "controllers/parroquia/formularioEdu.control.php";
+    die();
+
+case "infantiles":
+    include_once "controllers/parroquia/infantiles.control.php";
+    die();
+    
+case "inicio":
+    include_once "controllers/parroquia/inicio.control.php";
+    die();
 }
 
 //Este switch se encarga de todo el enrutamiento que ocupa login
