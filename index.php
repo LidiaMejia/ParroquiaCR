@@ -97,6 +97,13 @@ case "pascual":
 case "comunidades":
     include_once "controllers/parroquia/dimensiones/comunidades.control.php";
     die();
+//servicios
+case "oficina":
+  include_once "controllers/parroquia/servicios/oficina.control.php";
+  die();
+case "Actividades":
+    include_once "controllers/parroquia/servicios/Actividades.control.php";
+    die();
 
 //hasta aqui terminan los de la parroquia
 case "login":
