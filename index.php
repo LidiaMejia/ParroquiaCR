@@ -39,6 +39,7 @@ case "home":
     //llamar al controlador
     include_once "controllers/home.control.php";
     die();
+
 // desde aqui son los de la parroquia
 case "index":
     include_once "controllers/parroquia/index.control.php";
@@ -63,22 +64,38 @@ case "servicios":
             die();
 //sacramentos
 case "bautismo":
-  include_once "controllers/parroquia/principalSacra.control.php";
+  include_once "controllers/parroquia/sacramentos/bautismo.control.php";
   die();
 case "uncion":
-    include_once "controllers/parroquia/principalSacra.control.php";
+    include_once "controllers/parroquia/sacramentos/uncion.control.php";
     die();
 case "matrimonio":
-    include_once "controllers/parroquia/matrimonio.control.php";
+    include_once "controllers/parroquia/sacramentos/matrimonio.control.php";
     die();
 case "confirmacion":
-    include_once "controllers/parroquia/confirmacion.control.php";
+    include_once "controllers/parroquia/sacramentos/confirmacion.control.php";
     die();
 case "eucaristia":
-    include_once "controllers/parroquia/eucaristia.control.php";
+    include_once "controllers/parroquia/sacramentos/eucaristia.control.php";
     die();
 case "confesion":
-    include_once "controllers/parroquia/confesion.control.php";
+    include_once "controllers/parroquia/sacramentos/confesion.control.php";
+    die();
+case "formulario":
+    include_once "controllers/parroquia/sacramentos/formulario.control.php";
+    die();
+//dimensiones
+case "samaritana":
+  include_once "controllers/parroquia/dimensiones/samaritana.control.php";
+  die();
+case "misisonera":
+    include_once "controllers/parroquia/dimensiones/misionera.control.php";
+    die();
+case "pascual":
+    include_once "controllers/parroquia/dimensiones/pascual.control.php";
+    die();
+case "comunidades":
+    include_once "controllers/parroquia/dimensiones/comunidades.control.php";
     die();
 
 //hasta aqui terminan los de la parroquia
