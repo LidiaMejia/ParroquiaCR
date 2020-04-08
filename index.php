@@ -104,6 +104,16 @@ case "oficina":
 case "Actividades":
     include_once "controllers/parroquia/servicios/Actividades.control.php";
     die();
+//pastorales
+case "infantiles":
+  include_once "controllers/parroquia/pastorales/infantiles.control.php";
+  die();
+case "juvenil":
+  include_once "controllers/parroquia/pastorales/juvenil.control.php";
+  die();
+case "familiar":
+  include_once "controllers/parroquia/pastorales/familiar.control.php";
+  die();
 
 //hasta aqui terminan los de la parroquia
 case "login":
