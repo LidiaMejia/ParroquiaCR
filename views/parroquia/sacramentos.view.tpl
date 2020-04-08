@@ -108,4 +108,6 @@
               </div> <!-- FIN row-->
               </div> <!-- FIN iconos-->
                </section>
+
+               <link rel="stylesheet" href="public/css/principalSacra.css" /> 
        

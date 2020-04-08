@@ -13,7 +13,7 @@
     $arrViewData['page_title'] = "Dimensión Samaritana";
     addJsRef("public/js/main.js");
 
-    renderizar("parroquia/samaritana", $arrViewData);
+    renderizar("parroquia/dimensiones/samaritana", $arrViewData);
  }  
 
  run();

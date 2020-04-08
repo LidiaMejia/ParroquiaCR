@@ -13,7 +13,7 @@
     $arrViewData['page_title'] = "Unción de los Enfermos";
     addJsRef("public/js/main.js");
 
-    renderizar("parroquia/uncion", $arrViewData); 
+    renderizar("parroquia/sacramentos/uncion", $arrViewData); 
  }  
 
  run();

@@ -13,7 +13,7 @@
     $arrViewData['page_title'] = "Dimensión Pascual";
     addJsRef("public/js/main.js");
 
-    renderizar("parroquia/pascual", $arrViewData); 
+    renderizar("parroquia/dimensiones/pascual", $arrViewData); 
  }  
 
  run();

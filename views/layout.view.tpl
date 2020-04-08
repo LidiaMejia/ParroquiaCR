@@ -20,6 +20,8 @@
             <!-- <link rel="stylesheet" href="public/css/estilo.css" /> -->
             <link rel="stylesheet" href="public/css/estilos.css" />
             <link rel="stylesheet" href="public/css/grid.css" />
+             
+            
 
 
 
@@ -51,9 +53,9 @@
                         <img src="public/imgs/logoP.png" alt="">
                     </div>
                     <div class="enlaces-header">
-                        <a href="index.php?page=index" class="active">Inicio</a>
+                        <a href="index.php?page=index">Inicio</a>
                         <a href="index.php?page=nosotros" >Nuestra Parroquia</a>
-                        <a href="index.php?page=principalSacra">Sacramentos</a>
+                        <a href="index.php?page=sacramentos">Sacramentos</a>
                         <a href="index.php?page=dimensiones">Dimensiones</a>
                         <a href="index.php?page=pastorales">Pastorales</a>
                         <a href="index.php?page=plataforma">Plataforma</a>

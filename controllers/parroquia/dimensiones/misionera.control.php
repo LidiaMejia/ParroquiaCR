@@ -13,7 +13,7 @@
     $arrViewData['page_title'] = "Dimensión Misionera";
     addJsRef("public/js/main.js");
 
-    renderizar("parroquia/misionera", $arrViewData);
+    renderizar("parroquia/dimensiones/misionera", $arrViewData);
  }  
 
  run();

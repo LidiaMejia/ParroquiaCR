@@ -48,7 +48,7 @@ case "nosotros":
       include_once "controllers/parroquia/nosotros.control.php";
       die();
 case "sacramentos":
-      include_once "controllers/parroquia/principalSacra.control.php";
+      include_once "controllers/parroquia/sacramentos.control.php";
       die();
 case "dimensiones":
       include_once "controllers/parroquia/dimensiones.control.php";

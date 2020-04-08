@@ -13,7 +13,7 @@
     $arrViewData['page_title'] = "Pastoral Juvenil";
     addJsRef("public/js/main.js");
 
-    renderizar("parroquia/juvenil", $arrViewData);
+    renderizar("parroquia/pastorales/juvenil", $arrViewData);
  }  
 
  run();

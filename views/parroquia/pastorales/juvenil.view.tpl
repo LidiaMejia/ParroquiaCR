@@ -63,3 +63,4 @@
                 </article>
             </div>
         </div>
+        <link rel="stylesheet" href="public/css/stylePastoraleso.css" />   
