@@ -48,6 +48,6 @@
             </p>
             <a href="https://larazondecreer.com/" target="_blank">Visitar</a>
         </section>
-        <img src="public/imgs/god.svg" alt="" data-aos="zoom-out-up" data-aos-duration="2000">
+        <img src="public/imgs/god.svg">
     </section>
     <link rel="stylesheet" href="public/css/estilos.css">

@@ -85,6 +85,12 @@
                                     <br/>
                                     
                                 </p>
+                                <h3>Diacono</h3>
+                                <p> 
+                                    <b>Alberto Enamorado</b>
+                                    <br/>
+                                    
+                                </p>
                                 </div>
                             <div class="footer-columna">
                                 <h3> Dirección</h3>
@@ -133,5 +139,7 @@
                   });
               });
             </script>
+<script src="js/mainindex.js"></script>
+
         </body>
     </html>
