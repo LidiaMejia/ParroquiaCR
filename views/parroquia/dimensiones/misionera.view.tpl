@@ -57,7 +57,7 @@
                             </li>
 
                             <li>
-                                <div class="boton"> <a href="Pastorales.html">Conoce nuestras Pastorales</a> </div>
+                                <div class="boton"> <a href="index.php?page=pastorales">Conoce nuestras Pastorales</a> </div>
                             </li>
                         </ul>
                     </div>

@@ -5,7 +5,8 @@
  * @return void
  */
 
- function run(){
+ function run()
+ {
      $arrViewData = array();
      $arrViewData['page_title'] = 'Inicio';
      addJsRef('public/js/mainindex.js');

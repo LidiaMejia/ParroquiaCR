@@ -61,7 +61,7 @@
        
                    <div class="col-l-3 col-m-3 col-s-12 ">
                    <div class="logos">
-                   <a title="Información Confirmación" href="index.php?page=confirma"><img src="public/imgs/confirma.png" alt="logoconfirmacion"/><a title="Información Bautismo" href="bautismo.html"></a>
+                   <a title="Información Confirmación" href="index.php?page=confirmacion"><img src="public/imgs/confirma.png" alt="logoconfirmacion"/><a title="Información Bautismo" href="bautismo.html"></a>
                    <h2><b>Confirmación</b></h2>
                    </div>
                    </div>
@@ -76,7 +76,7 @@
                    <div class="segunda_fila">
                         <div class="col-l-3 col-m-3 col-s-12">
                             <div class="logos">
-                                <a title="Información Confirmación" href="index.php?page=confeciones"><img src="public/imgs/confesion.png"
+                                <a title="Información Confirmación" href="index.php?page=confesion"><img src="public/imgs/confesion.png"
                                         alt="logoreconciliacion" /></a>
                                 <h2><b>Reconciliación</b></h2>
                             </div>
@@ -92,7 +92,7 @@
                         <div class="col-l-3 col-m-3 col-s-12 ">
                             <div class="logos">
                             <a title="Solicitud" href="index.php?page=formulario1"><img src="public/imgs/info.png" alt="logosolicitud"/></a>
-                            <h2><b>Sólicitud de información</b></h2>
+                            <h2><b>Solicitud de información</b></h2>
                             </div>
                         </div>
                     </div>
@@ -107,7 +107,5 @@
        
               </div> <!-- FIN row-->
               </div> <!-- FIN iconos-->
-               </section>
-
-               <link rel="stylesheet" href="public/css/principalSacra.css" /> 
+            </section>
        

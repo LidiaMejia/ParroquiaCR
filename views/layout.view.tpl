@@ -10,8 +10,9 @@
 
 
             <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap" rel="stylesheet">
-            <link rel="shortcut icon" href="img/jesus.png" type="image/x-icon">
+            <link rel="shortcut icon" href="public/imgs/jesus.png" type="image/x-icon">
             <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Poppins|Righteous&display=swap" rel="stylesheet">
             <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,800" rel="stylesheet">
 
@@ -20,10 +21,9 @@
             <!-- <link rel="stylesheet" href="public/css/estilo.css" /> -->
             <link rel="stylesheet" href="public/css/estilos.css" />
             <link rel="stylesheet" href="public/css/grid.css" />
+            <link rel="stylesheet" href="public/css/principalsacra.css" />
+            <link rel="stylesheet" href="public/css/stylePastoraleso.css" />
              
-            
-
-
 
             <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
             <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
@@ -36,13 +36,6 @@
 
         </head>
         <body>
-          <div class="menu">
-              <div class="brand"><a href="index.php?page=index">{{page_title}}</a></div>
-              <ul>
-                  <li><a href="index.php?page=login">Iniciar Sesión</a></li>
-              </ul>
-              <div class="hbtn"> <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div></div>
-          </div> -->
 
           <!-- Inicia el Menu -->
           <header>
@@ -69,7 +62,6 @@
 
           <!-- termina el menu -->
 
-
             <div class="contenido">
                 {{{page_content}}}
             </div>
@@ -78,23 +70,23 @@
                     <div class="footer-container">
                         <div class="footer-main">
                             <div class="footer-columna">
-                                    <h3>Parroco</h3>
+                                    <h3>Párroco</h3>
                                 <p> 
-                                    <b>Padre Javier Eduardo Martinez</b>
+                                    <b>Padre Javier Eduardo Martínez</b>
                                     <br/>
                                     
                                 </p>
                                 </div>
                             <div class="footer-columna">
                                 <h3> Dirección</h3>
-                                <span class="fas fa-map-marker"><p>col. Loarque, calle principal.</p></span>
+                                <span class="fas fa-map-marker"><p>Col. Loarque, calle principal.</p></span>
                                 <span class="fas fa-phone"><p>(+504) 2226-5775 </p></span>
                                 <span class="fas fa-envelope"><p>cristohnresucitado@gmail.com</p></span>
                                 <span class="fas fa-mobile-alt"><p>(+504) 9430-6883</p></span>
                             </div> 
                             <div class="footer-columna">
                                 <h3> Sobre Nosotros</h3>
-                                    <p>La parroquia cristo resucitado esta ubicada en la colonia Loarque, Tegucigalpa, Honduras. Pertenece a la arquidiócesis de Tegucigalpa, nuestro arzobispo es S.E.R. Monseñor Oscar Andres Rodríguez Maradiaga. Nuestro párroco es el padre Javier Eduardo Martínez.</p>
+                                    <p>La parroquia Cristo Resucitado esta ubicada en la Colonia Loarque, Tegucigalpa, Honduras. Pertenece a la arquidiócesis de Tegucigalpa, nuestro arzobispo es S.E.R. Monseñor Óscar Andres Rodríguez Maradiaga. Nuestro párroco es el padre Javier Eduardo Martínez.</p>
                             </div> 
                         </div>
                     </div>
@@ -104,7 +96,7 @@
                 <div class="footer-copy-redes">
                     <div class="main-copy-redes">
                         <div class="footer-copy">
-                            <p >&copy; 2019, Todos los derechos reservados - | ParroquiaCristoResucitado |</p>
+                            <p >&copy; 2020, Todos los Derechos Reservados - | ParroquiaCristoResucitado |</p>
                 
                         </div>
                         <div class="footer-redes" >

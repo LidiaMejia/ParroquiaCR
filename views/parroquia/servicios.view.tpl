@@ -42,7 +42,7 @@
                             <p>
                                 La vida litúrgica y pastoral otorgan un verdadero sentido a la parroquia.
                             </p>
-                            <div class="boton"> <a href="index.php?page=Actividades">Leer más</a> </div>                            
+                            <div class="boton"> <a href="index.php?page=actividades">Leer más</a> </div>                            
                         </li>
                         <br/>
                         <br/>

@@ -14,7 +14,7 @@ $(".contenidod .tarjetasd ul .samaritana").click(function() /* Click sobre samar
 		{
 			/* pone la imagen de fondo para escritorio*/
 			$(".contenidod .imagent").css({
-				"background-image": "url(img/samaritana.jpg)",
+				"background-image": "url(public/imgs/samaritana.jpg)",
 				"background-size": "cover",
 				"background-repeat": "no-repeat",
 				"background-position": "center",
@@ -28,7 +28,7 @@ $(".contenidod .tarjetasd ul .samaritana").click(function() /* Click sobre samar
 		{
 			/* pone la imagen de fondo */
 			$(".contenidod .imagent").css({
-				"background-image": "url(img/samaritana.jpg)",
+				"background-image": "url(public/imgs/samaritana.jpg)",
 				"background-size": "cover",
 				"background-repeat": "no-repeat",
 				"background-position": "center",
@@ -56,7 +56,7 @@ $(".contenidod .tarjetasd ul .pascual").click(function() /* click sobre pascual 
 		{
 			/* pone la imagen de fondo para escritorio*/
 			$(".contenidod .imagent").css({
-				"background-image": "url(img/pascual.jpg)",
+				"background-image": "url(public/imgs/pascual.jpg)",
 				"background-size": "cover",
 				"background-repeat": "no-repeat",
 				"background-position": "center",
@@ -70,7 +70,7 @@ $(".contenidod .tarjetasd ul .pascual").click(function() /* click sobre pascual 
 		{
 			/* pone la imagen de fondo */
 			$(".contenidod .imagent").css({
-				"background-image": "url(img/pascual.jpg)",
+				"background-image": "url(public/imgs/pascual.jpg)",
 				"background-size": "cover",
 				"background-repeat": "no-repeat",
 				"background-position": "center",
@@ -98,7 +98,7 @@ $(".contenidod .tarjetasd ul .comunidades").click(function() /* click sobre comu
 		{
 			/* pone la imagen de fondo para escritorio*/
 			$(".contenidod .imagent").css({
-				"background-image": "url(img/comunidades.jpg)",
+				"background-image": "url(public/imgs/comunidades.jpg)",
 				"background-size": "cover",
 				"background-repeat": "no-repeat",
 				"background-position": "center",
@@ -112,7 +112,7 @@ $(".contenidod .tarjetasd ul .comunidades").click(function() /* click sobre comu
 		{
 			/* pone la imagen de fondo */
 			$(".contenidod .imagent").css({
-				"background-image": "url(img/comunidades.jpg)",
+				"background-image": "url(public/imgs/comunidades.jpg)",
 				"background-size": "cover",
 				"background-repeat": "no-repeat",
 				"background-position": "center",
@@ -140,7 +140,7 @@ $(".contenidod .tarjetasd ul .misionera").click(function() /* click sobre mision
 		{
 			/* pone la imagen de fondo para escritorio*/
 			$(".contenidod .imagent").css({
-				"background-image": "url(img/misionera.jpg)",
+				"background-image": "url(public/imgs/misionera.jpg)",
 				"background-size": "cover",
 				"background-repeat": "no-repeat",
 				"background-position": "center",
@@ -154,7 +154,7 @@ $(".contenidod .tarjetasd ul .misionera").click(function() /* click sobre mision
 		{
 			/* pone la imagen de fondo */
 			$(".contenidod .imagent").css({
-				"background-image": "url(img/misionera.jpg)",
+				"background-image": "url(public/imgs/misionera.jpg)",
 				"background-size": "cover",
 				"background-repeat": "no-repeat",
 				"background-position": "center",
@@ -187,7 +187,7 @@ $(".contenidod .tarjetasd ul .infantil").click(function() /* Click sobre  */
 			{
 				/* pone la imagen de fondo para escritorio*/
 				$(".contenidod .imagent2").css({
-					"background-image": "url(img/n1.JPG)",
+					"background-image": "url(public/imgs/n1.JPG)",
 					"background-size": "cover",
 					"background-repeat": "no-repeat",
 					"background-position": "center",
@@ -201,7 +201,7 @@ $(".contenidod .tarjetasd ul .infantil").click(function() /* Click sobre  */
 			{
 				/* pone la imagen de fondo */
 				$(".contenidod .imagent2").css({
-					"background-image": "url(img/n1.JPG)",
+					"background-image": "url(public/imgs/n1.JPG)",
 					"background-size": "cover",
 					"background-repeat": "no-repeat",
 					"background-position": "center",
@@ -230,7 +230,7 @@ $(".contenidod .tarjetasd ul .infantil").click(function() /* Click sobre  */
 			{
 				/* pone la imagen de fondo para escritorio*/
 				$(".contenidod .imagent2").css({
-					"background-image": "url(img/J1.JPG)",
+					"background-image": "url(public/imgs/J1.JPG)",
 					"background-size": "cover",
 					"background-repeat": "no-repeat",
 					"background-position": "center",
@@ -244,7 +244,7 @@ $(".contenidod .tarjetasd ul .infantil").click(function() /* Click sobre  */
 			{
 				/* pone la imagen de fondo */
 				$(".contenidod .imagent2").css({
-					"background-image": "url(img/J1.JPG)",
+					"background-image": "url(public/imgs/J1.JPG)",
 					"background-size": "cover",
 					"background-repeat": "no-repeat",
 					"background-position": "center",
@@ -272,7 +272,7 @@ $(".contenidod .tarjetasd ul .infantil").click(function() /* Click sobre  */
 			{
 				/* pone la imagen de fondo para escritorio*/
 				$(".contenidod .imagent2").css({
-					"background-image": "url(img/ptf.jpg)",
+					"background-image": "url(public/imgs/ptf.jpg)",
 					"background-size": "cover",
 					"background-repeat": "no-repeat",
 					"background-position": "center",
@@ -286,7 +286,7 @@ $(".contenidod .tarjetasd ul .infantil").click(function() /* Click sobre  */
 			{
 				/* pone la imagen de fondo */
 				$(".contenidod .imagent2").css({
-					"background-image": "url(img/ptf.jpg)",
+					"background-image": "url(public/imgs/ptf.jpg)",
 					"background-size": "cover",
 					"background-repeat": "no-repeat",
 					"background-position": "center",
@@ -320,7 +320,7 @@ $(".contenidod .tarjetasd ul .actividadeslit").click(function() /* Click sobre a
 		{
 			/* pone la imagen de fondo para escritorio*/
 			$(".contenidod .imagent1").css({
-				"background-image": "url(img/actlit.jpg)",
+				"background-image": "url(public/imgs/actlit.jpg)",
 				"background-size": "cover",
 				"background-repeat": "no-repeat",
 				"background-position": "center",
@@ -334,7 +334,7 @@ $(".contenidod .tarjetasd ul .actividadeslit").click(function() /* Click sobre a
 		{
 			/* pone la imagen de fondo */
 			$(".contenidod .imagent1").css({
-				"background-image": "url(img/actlit.jpg)",
+				"background-image": "url(public/imgs/actlit.jpg)",
 				"background-size": "cover",
 				"background-repeat": "no-repeat",
 				"background-position": "center",
@@ -360,7 +360,7 @@ $(".contenidod .tarjetasd ul .oficinaparroquial").click(function() /* click sobr
 		{
 			/* pone la imagen de fondo para escritorio*/
 			$(".contenidod .imagent1").css({
-				"background-image": "url(img/oficina1.jpg)",
+				"background-image": "url(public/imgs/oficina1.jpg)",
 				"background-size": "cover",
 				"background-repeat": "no-repeat",
 				"background-position": "center",
@@ -374,7 +374,7 @@ $(".contenidod .tarjetasd ul .oficinaparroquial").click(function() /* click sobr
 		{
 			/* pone la imagen de fondo */
 			$(".contenidod .imagent1").css({
-				"background-image": "url(img/oficina1.jpg)",
+				"background-image": "url(public/imgs/oficina1.jpg)",
 				"background-size": "cover",
 				"background-repeat": "no-repeat",
 				"background-position": "center",

@@ -100,4 +100,3 @@
                 </div>
      
             </section>
-            <link rel="stylesheet" href="/public/css/estilos.css">

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Controlador Pagina Servicios
+ * Controlador Pagina Sacramento Bautismo
  * 
  * @return void
  */
@@ -10,11 +10,11 @@
  {
     $arrViewData = array();
 
-    $arrViewData['page_title'] = "Servicios";
+    $arrViewData['page_title'] = "Bautismo";
     addJsRef("public/js/main.js");
     addJsRef('public/js/mainindex.js');
 
-    renderizar("parroquia/servicios", $arrViewData); 
+    renderizar("parroquia/sacramentos/bautismo", $arrViewData);
  }  
 
  run();

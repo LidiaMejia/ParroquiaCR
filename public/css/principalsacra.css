@@ -1,4 +1,4 @@
-
+/* --------------------------------------- PRINCIPAL SACRAMENTOS ---------------------------------------------------------*/
 .bannerd h1#sacra{
     top: calc(50% - 55px);
 	left: calc(49% - 150px);  
@@ -35,7 +35,6 @@
     font-family: 'Oswald', sans-serif;
 }
 
-
 /* IMAGEN PRINCIPAL Y CITA BIBLICA */
 
 .imagenbasica img{
@@ -49,7 +48,8 @@
 
 
 .imagenbasica h1{
-    font-family: 'Bebas Neue', cursive;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 27px;
     display: block;
     box-sizing: border-box;
     position: absolute;
@@ -85,7 +85,6 @@
     background-color: #981E1B;
 }
 
-
 /* IMAGENES POR PASO */
 .leftImage{
     margin-top: 1.6em;
@@ -104,7 +103,18 @@
     font-weight: bold;
 }
 
-.leftImage p, ul{
+.leftImage p{
+    background-color: #981E1B;
+    opacity: 0.8; 
+    opacity: 60%;
+    padding: 18px;
+    margin: 0px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+}
+
+.leftImage ul{
     background-color: #981E1B;
     opacity: 0.8; 
     opacity: 60%;
@@ -132,10 +142,14 @@
     margin-bottom: 2em;
 }
 
+/* --------------------------------------- FIN PRINCIPAL SACRAMENTOS ---------------------------------------------------------*/
+
 
 @media(min-width: 415px) /* TABLETAS */
 {    
-    .bannerd h1#sacra{
+    	/* ---------------- PRINCIPAL SACRAMENTOS TABLET ---------------*/
+	
+	.bannerd h1#sacra{
 	    left: calc(34% - 150px);  
     }
 
@@ -175,15 +189,24 @@
         margin-top: 0px;
     }
 
-    .leftImage p, ul{
+    .leftImage p{
         box-sizing: border-box;
     }
+    
+    .leftImage ul{
+        box-sizing: border-box;
+	}
+	
+	/* ---------------- FIN PRINCIPAL SACRAMENTOS TABLET ---------------*/
 
 }
 
 @media(min-width: 1024px) /* ORDENADORES */
 {
-    .bannerd h1#sacra{
+    
+    	/* ---------------- PRINCIPAL SACRAMENTOS ORDENADOR ---------------*/
+
+	.bannerd h1#sacra{
 	    left: calc(43% - 150px);  
     }
 
@@ -223,8 +246,9 @@
         width: 45%; /*45%*/
         padding-top: 4em;
         padding-right: 2em;
-    }
-    
+	}
+	
+	/* ---------------- FIN PRINCIPAL SACRAMENTOS ORDENADOR ---------------*/
 
 }
 

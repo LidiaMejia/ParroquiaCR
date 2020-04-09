@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Controlador Pagina Servicios
+ * Controlador Pagina Servicios Actividades Liturgicas
  * 
  * @return void
  */
@@ -10,11 +10,12 @@
  {
     $arrViewData = array();
 
-    $arrViewData['page_title'] = "Servicios";
+    $arrViewData['page_title'] = "Actividades";
+    
     addJsRef("public/js/main.js");
     addJsRef('public/js/mainindex.js');
 
-    renderizar("parroquia/servicios", $arrViewData); 
+    renderizar("parroquia/servicios/actividades", $arrViewData);
  }  
 
  run();

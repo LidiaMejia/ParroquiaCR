@@ -75,9 +75,9 @@
 
 @media(min-width: 415px) /* Tabletas */
 {
-	.bannerd h1#titulo_pastoral{
+	.bannerd h1#titulo_pastorales{
 		font-size: 7.5em;
-		left: calc(25% - 150px);
+		left: calc(41% - 150px); /*25%*/
 	}
 
 	.bannerd h1#titulo_juvenil{
@@ -112,9 +112,9 @@
 
 @media(min-width: 1024px) /* Ordenadores */
 {
-	.bannerd h1#titulo_pastoral{
+	.bannerd h1#titulo_pastorales{
 		font-size: 7.5em;
-		left: calc(36% - 150px);
+		left: calc(46% - 150px); /*36%*/
 	}
 
 	.bannerd h1#titulo_juvenil{

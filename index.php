@@ -41,7 +41,21 @@ case "home":
     include_once "controllers/home.control.php";
     die();
 
-// desde aqui son los de la parroquia
+case "login":
+    include_once "controllers/security/login.control.php";
+    die();
+
+case "logout":
+    include_once "controllers/security/logout.control.php";
+    die();
+
+ //*En la carpeta security para el registro de usuarios
+ case "register":
+    include_once "controllers/security/register.control.php";
+    die();
+
+
+// Desde aqui son los de la parroquia
 case "index":
     include_once "controllers/parroquia/index.control.php";
     die();
@@ -63,6 +77,7 @@ case "plataforma":
 case "servicios":
             include_once "controllers/parroquia/servicios.control.php";
             die();
+
 //sacramentos
 case "bautismo":
   include_once "controllers/parroquia/sacramentos/bautismo.control.php";
@@ -82,14 +97,12 @@ case "eucaristia":
 case "confesion":
     include_once "controllers/parroquia/sacramentos/confesion.control.php";
     die();
-case "formulario":
-    include_once "controllers/parroquia/sacramentos/formulario.control.php";
-    die();
+
 //dimensiones
 case "samaritana":
   include_once "controllers/parroquia/dimensiones/samaritana.control.php";
   die();
-case "misisonera":
+case "misionera":
     include_once "controllers/parroquia/dimensiones/misionera.control.php";
     die();
 case "pascual":
@@ -98,13 +111,15 @@ case "pascual":
 case "comunidades":
     include_once "controllers/parroquia/dimensiones/comunidades.control.php";
     die();
+
 //servicios
 case "oficina":
   include_once "controllers/parroquia/servicios/oficina.control.php";
   die();
-case "Actividades":
-    include_once "controllers/parroquia/servicios/Actividades.control.php";
+case "actividades":
+    include_once "controllers/parroquia/servicios/actividades.control.php";
     die();
+
 //pastorales
 case "infantiles":
   include_once "controllers/parroquia/pastorales/infantiles.control.php";
@@ -116,63 +131,6 @@ case "familiar":
   include_once "controllers/parroquia/pastorales/familiar.control.php";
   die();
 
-//hasta aqui terminan los de la parroquia
-case "login":
-    include_once "controllers/security/login.control.php";
-    die();
-case "logout":
-    include_once "controllers/security/logout.control.php";
-    die();
-
- //*En la carpeta security para el registro de usuarios
- case "register":
-    include_once "controllers/security/register.control.php";
-    die();
-
-
-  case "matrimonio":
-    include_once "controllers/parroquia/matrimonio.control.php";
-  die();
-
-  case "misionera":
-    include_once "controllers/parroquia/misionera.control.php";
-  die();
-
-  case "nosotros":
-    include_once "controllers/parroquia/nosotros.control.php";
-  die();
-
-  case "oficinaParroquial":
-    include_once "controllers/parroquia/oficinaParroquial.control.php";
-  die();
-
-  case "pascual":
-    include_once "controllers/parroquia/pascual.control.php";
-  die();
-
-  case "pastorales":
-    include_once "controllers/parroquia/pastorales.control.php";
-  die();
-
-  case "plataforma":
-    include_once "controllers/parroquia/plataforma.control.php";
-  die();
-
-  case "principalSacra":
-    include_once "controllers/parroquia/principalSacra.control.php";
-  die();
-
-  case "samaritana":
-    include_once "controllers/parroquia/samaritana.control.php";
-  die();
-
-  case "servicios":
-    include_once "controllers/parroquia/servicios.control.php";
-  die();
-
-  case "uncionDeLosEnf":
-    include_once "controllers/parroquia/uncionDeLosEnf.control.php";
-  die();
 
   /************* CARRETILLA DE COMPRA ***********/
   case "addToCart":

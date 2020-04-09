@@ -1325,6 +1325,7 @@ main .historia{
 	padding-bottom: 0.5em;
 	color: #981e1b;
 	font-size: 1.5em; 
+	font-weight: bold;
 }
 
 
@@ -1605,7 +1606,7 @@ main .historia{
 
 .sec_galeria .visualizar{
 	display: none; /* Se quita el elemento. Como que no existe */
-	z-index: 3;
+	z-index: 101;
 }
 
 /* :target para que cuando se de click lo muestre */
@@ -1662,6 +1663,7 @@ main .historia{
 	margin-left: 88vw;
 	padding-bottom: 4px;	
 }
+
 
 
 @media(min-width: 415px) /* Tabletas */

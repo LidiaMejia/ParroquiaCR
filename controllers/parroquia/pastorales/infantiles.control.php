@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Controlador Pagina Servicios
+ * Controlador Pagina Pastoral Infantil
  * 
  * @return void
  */
@@ -10,11 +10,12 @@
  {
     $arrViewData = array();
 
-    $arrViewData['page_title'] = "Servicios";
+    $arrViewData['page_title'] = "Infantil";
+    
     addJsRef("public/js/main.js");
     addJsRef('public/js/mainindex.js');
 
-    renderizar("parroquia/servicios", $arrViewData); 
+    renderizar("parroquia/pastorales/infantiles", $arrViewData);
  }  
 
  run();
