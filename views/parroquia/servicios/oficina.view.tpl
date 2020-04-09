@@ -34,7 +34,7 @@
                         <h2>Atencion Espiritual</h2>
                         <div class="soporte"></div>
                         <ul>
-                            <li>La oficina está abierta  todos los días en los siguientes horarios:</li>
+                            <li>La oficina está abierta todos los días en los siguientes horarios:</li>
                             <li>Lunes: 10:00 A.M  A 2:00 P.M</li>
                             <li>Martes a Viernes: 10 :00 A.M A 7:00 PM</li>
                             <li>Sabados:  8:00 AM A 7:00 P.M</li>

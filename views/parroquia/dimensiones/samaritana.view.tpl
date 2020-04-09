@@ -24,8 +24,7 @@
             <div class="col-s-12 col-offset-m-1 col-m-10 col-offset-l-2 col-l-8"> <!-- RESPONSIVE -->
                 <section class="frase">               
                     <div class="texto_frase">
-                        <p>"Iluminados por Cristo, el sufrimiento, la injusticia y la
-                            cruz nos interpelan a vivir como Iglesia samaritana"<br/>
+                        <p>"Iluminados por Cristo, el sufrimiento, la injusticia y la cruz nos interpelan a vivir como Iglesia samaritana"<br/>
                             <b>Lc. 10, 25-37</b></p>
                     </div>
                     <img src="public/imgs/frasesamar.jpg" alt="Vela de color rojo encendida."/>        
@@ -33,11 +32,7 @@
             </div>
 
             <section class="infod">
-                <p>Fundamentados en los
-                        principios de la Doctrina Social de la Iglesia (DSI), tenemos
-                        el fin de contribuir al bien común de las personas y las
-                        poblaciones más vulnerables de nuestra realidad
-                        Diocesana, enfocados en los siguientes aspectos:
+                <p>Fundamentados en los principios de la Doctrina Social de la Iglesia (DSI), tenemos el fin de contribuir al bien común de las personas y las poblaciones más vulnerables de nuestra realidad Diocesana, enfocados en los siguientes aspectos:
                 </p>
 
                 <!-- SALUD -->
@@ -51,18 +46,10 @@
                     <div class="info_pastoral">
                         <h2>Pastoral de la Salud</h2>
 
-                        <p>La
-                                acción de la Iglesia en el mundo de la salud, engloba todas las dimensiones de la vida de
-                                la Iglesia: evangelización y catequesis; celebración,
-                                liturgia y vida sacramental; atención, cuidado y
-                                acompañamiento de las personas.
+                        <p>La acción de la Iglesia en el mundo de la salud, engloba todas las dimensiones de la vida de la Iglesia: evangelización y catequesis; celebración, liturgia y vida sacramental; atención, cuidado y acompañamiento de las personas.
                         </p>
 
-                        <p> <b>Objetivo Específico:</b> <br/> Potenciar en cada parroquia un
-                            ambiente favorable para el desarrollo de una óptima
-                            salud física, incorporando a su definición de salud no
-                            sólo los aspectos físicos y orgánicos, sino también la
-                            dimensión psíquica, social y espiritual de la persona. 
+                        <p> <b>Objetivo Específico:</b> <br/> Potenciar en cada parroquia un ambiente favorable para el desarrollo de una óptima salud física, incorporando a su definición de salud no solo los aspectos físicos y orgánicos, sino también la dimensión psíquica, social y espiritual de la persona. 
                         </p>
                     </div>
 
@@ -71,21 +58,15 @@
                         <div class="soporte"></div>
 
                         <ul>
-                            <li>Fortalecer el trabajo de CEVIFA otros grupos dedicados a la formación en
-                                    salud y madurez sexual, así, como la planificación
-                                    familiar con métodos naturales.
+                            <li>Fortalecer el trabajo de CEVIFA otros grupos dedicados a la formación en salud y madurez sexual, así, como la planificación familiar con métodos naturales.
                             </li>
 
                             <li>
-                                    Promover en cada parroquia en la medida de
-                                    las posibilidades, el establecimiento de dispensarios
-                                    y clínicas médicas.
+                                Promover en cada parroquia en la medida de las posibilidades, el establecimiento de dispensarios y clínicas médicas.
                             </li>
 
                             <li>
-                                    Talleres de
-                                    formación técnica para jóvenes en los diferentes
-                                    oficios: carpintería, soldadura, electricidad, etc.
+                                Talleres de formación técnica para jóvenes en los diferentes oficios: carpintería, soldadura, electricidad, etc.
                             </li>
                         </ul>
                     </div>
@@ -103,15 +84,10 @@
                     <div class="info_pastoral">
                         <h2>Pastoral Penitenciaria</h2>
 
-                        <p>La misión principal de la Pastoral Penitenciaria (PP) es la
-                            evangelización de las personas privadas de libertad en
-                            los diferentes centros de reclusión, así como de sus
-                            familiares, para reconstruir su dignidad de hijos de Dios.
+                        <p>La misión principal de la Pastoral Penitenciaria (PP) es la evangelización de las personas privadas de libertad en los diferentes centros de reclusión, así como de sus familiares, para reconstruir su dignidad de hijos de Dios.
                         </p>
 
-                        <p> <b>Objetivo Específico:</b> <br/> Reconciliar al privado de
-                            libertad en su triple dimensión: Consigo mismo, con
-                            Dios y con la sociedad. 
+                        <p> <b>Objetivo Específico:</b> <br/> Reconciliar al privado de libertad en su triple dimensión: Consigo mismo, con Dios y con la sociedad. 
                         </p>
                     </div>
 
@@ -122,10 +98,7 @@
                                 <div class="soporte2"></div>
 
                                 <ul>
-                                    <li>Gestión y promoción del desarrollo integral y
-                                        digno de las familias del privado de libertad y de las
-                                        víctimas, para que tengan las mismas oportunidades
-                                        dentro de la sociedad.
+                                    <li>Gestión y promoción del desarrollo integral y digno de las familias del privado de libertad y de las víctimas, para que tengan las mismas oportunidades dentro de la sociedad.
                                     </li>
 
                                     <li>
@@ -142,17 +115,11 @@
                                 <div class="soporte2"></div>
 
                                 <ul>
-                                    <li>Alianzas entre centros educativos,
-                                        empresas y altas instituciones para que brinden
-                                        oportunidades laborales y estudiantiles a los
-                                        privados de libertad, a sus familias y/o a sus
-                                        víctimas.
+                                    <li>Alianzas entre centros educativos, empresas y altas instituciones para que brinden oportunidades laborales y estudiantiles a los privados de libertad, a sus familias y/o a sus víctimas.
                                     </li>
 
                                     <li>
-                                        Realización de una campaña completa y
-                                        permanente de rescate de los valores cristianos y
-                                        humanos, para prevenir la ejecución del delito.
+                                        Realización de una campaña completa y permanente de rescate de los valores cristianos y humanos, para prevenir la ejecución del delito.
                                     </li>
                                 </ul>
                             </div>
@@ -172,10 +139,7 @@
                     <div class="info_pastoral">
                         <h2>Pastoral de Movilidad Humana</h2>
 
-                        <p>La Iglesia, como Madre, debe sentirse a sí misma como
-                            Iglesia sin fronteras, Iglesia familiar, atenta al fenómeno
-                            creciente de la movilidad humana en sus diversos
-                            sectores.
+                        <p>La Iglesia, como Madre, debe sentirse a sí misma como Iglesia sin fronteras, Iglesia familiar, atenta al fenómeno creciente de la movilidad humana en sus diversos sectores.
                         </p>
 
                         <p> <b>Objetivo Específico:</b> <br/> Promover la defensa de los
@@ -190,15 +154,11 @@
                                 <div class="soporte2"></div>
 
                                 <ul>
-                                    <li>La organización de un plan de acción pastoral de
-                                        acuerdo a cada contexto en particular, con enfoque
-                                        a las realidades familiares.
+                                    <li>La organización de un plan de acción pastoral de acuerdo a cada contexto en particular, con enfoque a las realidades familiares.
                                     </li>
 
                                     <li>
-                                        La promoción del desarrollo integral de las personas para lograr una sociedad más justa y digna
-                                        a través del apoyo de los Sacerdotes, Religiosas y
-                                        Laicos.
+                                        La promoción del desarrollo integral de las personas para lograr una sociedad más justa y digna a través del apoyo de los Sacerdotes, Religiosas y Laicos.
                                     </li>
                                 </ul>
                             </div>
@@ -210,15 +170,11 @@
                                 <div class="soporte2"></div>
 
                                 <ul>
-                                    <li>Identificar, asistir y acompañar a niños,
-                                        adolescentes y jóvenes afectados por la movilidad
-                                        humana.
+                                    <li>Identificar, asistir y acompañar a niños, adolescentes y jóvenes afectados por la movilidad humana.
                                     </li>
 
                                     <li>
-                                        Organización de un directorio de instituciones y
-                                        organizaciones que ofrezcan servicios de atención
-                                        inmediata.
+                                        Organización de un directorio de instituciones y organizaciones que ofrezcan servicios de atención inmediata.
                                     </li>
                                 </ul>
                             </div>
@@ -238,17 +194,10 @@
                         <div class="info_pastoral">
                             <h2>Pastoral Doctrina Social de la Iglesia</h2>
     
-                            <p>la Pastoral Social de la Iglesia no es sólo
-                                    intelectual o cognitivo, sino eminentemente práctico y
-                                    personal. Debería cambiar nuestras vidas y ayudarnos a
-                                    asumir nuestras propias responsabilidades con
-                                    respecto al bien común.
+                            <p>la Pastoral Social de la Iglesia no es sólo intelectual o cognitivo, sino eminentemente práctico y personal. Debería cambiar nuestras vidas y ayudarnos a asumir nuestras propias responsabilidades con respecto al bien común.
                             </p>
     
-                            <p> <b>Objetivo Específico:</b> <br/> Promover la práctica de los
-                                principios de la Doctrina Social de la Iglesia (DSI) para responder a las
-                                demandas de los segmentos poblacionales
-                                urbanos-rurales en situación de pobreza extrema.
+                            <p> <b>Objetivo Específico:</b> <br/> Promover la práctica de los principios de la Doctrina Social de la Iglesia (DSI) para responder a las demandas de los segmentos poblacionales urbanos-rurales en situación de pobreza extrema.
                             </p>
                         </div>
     
@@ -282,15 +231,10 @@
                                     <div class="soporte2"></div>
     
                                     <ul>
-                                        <li>Acompañar procesos que defiendan los
-                                                Derechos Humanos (DD.HH.) a la luz del Evangelio
-                                                y la DSI.
+                                        <li>Acompañar procesos que defiendan los Derechos Humanos (DD.HH.) a la luz del Evangelio y la DSI.
                                         </li>
     
-                                        <li>Elaboración de guías para la enseñanza de la DSI
-                                            en las Universidades y colegios católicos, y la difusión 
-                                            permanente de la DSI a través de
-                                            diversos medios.
+                                        <li>Elaboración de guías para la enseñanza de la DSI en las Universidades y colegios católicos, y la difusión  permanente de la DSI a través de diversos medios.
                                         </li>
                                     </ul>
                                 </div>
@@ -310,17 +254,10 @@
                         <div class="info_pastoral">
                             <h2>Pastoral de la Mujer</h2>
     
-                            <p>Las mujeres son las primeras transmisoras de la fe y
-                                    colaboradoras de los pastores, quienes deben
-                                    atenderlas, valorarlas y respetarlas. Para ello, se
-                                    requiere propiciar una formación integral de manera
-                                    que las mujeres puedan cumplir su misión en la familia y
-                                    en la sociedad.
+                            <p>Las mujeres son las primeras transmisoras de la fe y colaboradoras de los pastores, quienes deben atenderlas, valorarlas y respetarlas. Para ello, se requiere propiciar una formación integral de manera que las mujeres puedan cumplir su misión en la familia y en la sociedad.
                             </p>
     
-                            <p> <b>Objetivo Específico:</b> <br/> Mejorar la calidad de vida de la
-                                mujer, basada en el respeto y promoción de la dignidad
-                                humana.
+                            <p> <b>Objetivo Específico:</b> <br/> Mejorar la calidad de vida de la mujer, basada en el respeto y promoción de la dignidad humana.
                             </p>
                         </div>
     
@@ -331,15 +268,10 @@
                                     <div class="soporte2"></div>
     
                                     <ul>
-                                        <li>Asesoría jurídica básica en casos de familia y
-                                                asuntos privados (alimentos, deudas, propiedad), y
-                                                el acompañamiento en casos de violencia
-                                                intrafamiliar y violencia contra la mujer.
+                                        <li>Asesoría jurídica básica en casos de familia y asuntos privados (alimentos, deudas, propiedad), y el acompañamiento en casos de violencia intrafamiliar y violencia contra la mujer.
                                         </li>
     
-                                        <li>Capacitación de agentes de pastoral que
-                                                acompañen a la mujer en un proceso de superación
-                                                como persona, esposa, madre y educadora.
+                                        <li>Capacitación de agentes de pastoral que acompañen a la mujer en un proceso de superación como persona, esposa, madre y educadora.
                                         </li>
                                     </ul>
                                 </div>
@@ -352,13 +284,11 @@
     
                                     <ul>    
                                         <li>
-                                            El acompañamiento integral que responda a las
-                                            necesidades de las mujeres en riesgo social.
+                                            El acompañamiento integral que responda a las necesidades de las mujeres en riesgo social.
                                         </li>
 
                                         <li>
-                                            Elaboración de spots televisivos y radiales
-                                            destacando el papel y rol de la mujer en la sociedad.
+                                            Elaboración de spots televisivos y radiales destacando el papel y rol de la mujer en la sociedad.
                                         </li>
                                     </ul>
                                 </div>
@@ -378,16 +308,10 @@
                             <div class="info_pastoral">
                                 <h2>Pastoral de la Ecología y el Trabajo</h2>
         
-                                <p>Responsable de promover políticas en el ámbito del
-                                        desarrollo agrario-rural integral, orientadas por la
-                                        Doctrina Social de la Iglesia (DSI), con la finalidad de
-                                        trabajar por la construcción del Reino de Dios.
+                                <p>Responsable de promover políticas en el ámbito del desarrollo agrario-rural integral, orientadas por la Doctrina Social de la Iglesia (DSI), con la finalidad de trabajar por la construcción del Reino de Dios.
                                 </p>
         
-                                <p> <b>Objetivo Específico:</b> <br/> Crear la Pastoral de la Tierra y el
-                                    Trabajo (PTT) a través de una auténtica catequesis y
-                                    concienciación para que todos respetemos y
-                                    promovamos el cuidado de la casa común.
+                                <p> <b>Objetivo Específico:</b> <br/> Crear la Pastoral de la Tierra y el Trabajo (PTT) a través de una auténtica catequesis y concienciación para que todos respetemos y promovamos el cuidado de la casa común.
                                 </p>
                             </div>
         
@@ -421,15 +345,11 @@
                                         <div class="soporte2"></div>
         
                                         <ul>
-                                            <li>La creación de microempresas y desarrollo de
-                                                    huertos familiares, como medios de subsistencia
-                                                    personal.
+                                            <li>La creación de microempresas y desarrollo de huertos familiares, como medios de subsistencia personal.
                                             </li>
     
                                             <li>
-                                                    Educación para la motivación en valores
-                                                    ambientales: campamentos, caminatas, visitas a
-                                                    eco- parques, etc.
+                                                Educación para la motivación en valores ambientales: campamentos, caminatas, visitas a eco-parques, etc.
                                             </li>
                                         </ul>
                                     </div>

@@ -10,7 +10,7 @@
                  <div class="infod" id="tituloSacra">
                  <h2><b>LA CONFIRMACIÓN, EL SACRAMENTO DE MADUREZ CRISTIANA</b></h2>
                  <p>Gracias a éste sacramento el bautizado se fortalece con el don del Espíritu Santo, </br>
-                    se une más íntimamente con la Iglesia, seconvierte en testigo de Jesucristo, de palabra y obra.</p>
+                    se une más íntimamente con la Iglesia, se convierte en testigo de Jesucristo, de palabra y obra.</p>
                 </div>
              </section>
 

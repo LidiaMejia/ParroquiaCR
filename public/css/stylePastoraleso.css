@@ -80,6 +80,11 @@
 		left: calc(41% - 150px); /*25%*/
 	}
 
+	.bannerd h1#titulo_pastoral{
+		font-size: 6em;
+		left: calc(35% - 150px);
+	}
+
 	.bannerd h1#titulo_juvenil{
 		font-size: 7.5em;
 		left: calc(28% - 150px);
@@ -115,6 +120,11 @@
 	.bannerd h1#titulo_pastorales{
 		font-size: 7.5em;
 		left: calc(46% - 150px); /*36%*/
+	}
+
+	.bannerd h1#titulo_pastoral{
+		font-size: 6em;
+		left: calc(43% - 150px);
 	}
 
 	.bannerd h1#titulo_juvenil{

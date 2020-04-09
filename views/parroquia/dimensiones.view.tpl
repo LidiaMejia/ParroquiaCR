@@ -22,12 +22,7 @@
             </section>
 
             <section class="infod">
-                <h2>En 5 años nos proponemos fortalecer nuestro caminar como
-                        Iglesia Arquidiocesana, comunidad
-                        de comunidades, formadora de
-                        discípulos misioneros, que con
-                        alegría celebre su fe en Cristo y esté
-                        al servicio de su pueblo.</h2>
+                <h2>En 5 años nos proponemos fortalecer nuestro caminar como Iglesia Arquidiocesana, comunidad de comunidades, formadora de discípulos misioneros, que con alegría celebre su fe en Cristo y esté al servicio de su pueblo.</h2>
                 <div class="linea"></div>
 
                 <div class="opcionesf">
@@ -51,13 +46,7 @@
                     </ul>
                 </div>  
 
-                <p>Al hablar de opciones fundamentales queremos
-                        comprender que: Todas las líneas de Acción de cada una
-                        de las Dimensiones de la Pastoral en nuestra
-                        Arquidiócesis, deben entenderse de manera
-                        transversal, como respuestas a los retos que
-                        representan para la Pastoral dichos aspectos de nuestra
-                        vida como Iglesia que peregrina en Honduras.</p>
+                <p>Al hablar de opciones fundamentales queremos comprender que: Todas las líneas de Acción de cada una de las Dimensiones de la Pastoral en nuestra Arquidiócesis, deben entenderse de manera transversal, como respuestas a los retos que representan para la Pastoral dichos aspectos de nuestra vida como Iglesia que peregrina en Honduras.</p>
             </section>
 
             <section class="contenidod row">
@@ -69,31 +58,25 @@
                     <ul>
                         <li class="misionera">                            
                             <h3>Misionera</h3>
-                            <p>"La pedagogía de Jesucristo para la formación integral
-                                    de Discípulos Misioneros".</p>
+                            <p>"La pedagogía de Jesucristo para la formación integral de Discípulos Misioneros".</p>
                             <div class="boton"> <a href="index.php?page=misionera">Leer más</a> </div>                            
                         </li>
 
                         <li class="pascual">
                             <h3>Pascual</h3>
-                            <p>"La evangelización gozosa se vuelve belleza en la liturgia
-                                    en medio de la exigencia diaria de extender el bien".</p>
+                            <p>"La evangelización gozosa se vuelve belleza en la liturgia en medio de la exigencia diaria de extender el bien".</p>
                             <div class="boton"> <a href="index.php?page=pascual">Leer más</a> </div>  
                         </li>
 
                         <li class="samaritana">
                             <h3>Samaritana</h3>
-                            <p>“La evangelización ha ido
-                                    unida siempre a la promoción humana y a la auténtica
-                                    liberación cristiana”.</p>
+                            <p>“La evangelización ha ido unida siempre a la promoción humana y a la auténtica liberación cristiana”.</p>
                             <div class="boton"> <a href="index.php?page=samaritana">Leer más</a> </div>  
                         </li>
 
                         <li class="comunidades">
                             <h3>Comunidades</h3>
-                            <p>"La pertenencia a una
-                                    comunidad concreta, en la que podamos vivir una
-                                    experiencia permanente de discipulado".</p>
+                            <p>"La pertenencia a una comunidad concreta, en la que podamos vivir una experiencia permanente de discipulado".</p>
                             <div class="boton"> <a href="index.php?page=comunidades">Leer más</a> </div>  
                         </li>
                     </ul>

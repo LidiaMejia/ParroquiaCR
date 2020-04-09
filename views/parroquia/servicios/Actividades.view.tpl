@@ -43,9 +43,7 @@
                         <ul>
                             <li>1 de enero</li>
                             <li>
-                                Se celebra la maternidad divina de María. Es la festividad litúrgica más antigua
-                                entre las dedicadas a la Virgen en la Iglesia occidental. Esta conmemoración queda 
-                                definida  en el Concilio de Éfeso.
+                                Se celebra la maternidad divina de María. Es la festividad litúrgica más antigua entre las dedicadas a la Virgen en la Iglesia occidental. Esta conmemoración queda  definida  en el Concilio de Éfeso.
                             </li>
                         </ul>
                     </div>
@@ -150,9 +148,7 @@
                         <ul>
                             <li>25 de diciembre</li>
                             <li>
-                                Conmemoración litúrgica del Nacimiento de Jesús en Belén.
-                                Jesucristo es el Verbo, que vive en el seno de Dios, y que pone su tienda entre los hombres, en un determinado momento de
-                                la historia.
+                                Conmemoración litúrgica del Nacimiento de Jesús en Belén. Jesucristo es el Verbo, que vive en el seno de Dios, y que pone su tienda entre los hombres, en un determinado momento de la historia.
                             </li>
                         </ul>
                     </div>

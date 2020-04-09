@@ -20,7 +20,7 @@
                 <p><b>Lunes a Viernes:</b> 6:00 AM y 7:00 PM   
                     <br>
                     <br>
-                    <b>Sabados: </b>5:00 PM
+                    <b>Sábados: </b>5:00 PM
                     <br>
                     <br>
                     <b>Domingos: </b>10:30 AM y 7:00 PM
@@ -38,7 +38,7 @@
             </div>
             <div class="articulo" data-aos="zoom-in-right">
                 <i class="fas fa-church"></i>
-                <h3>fuerza Aérea</h3>
+                <h3>Fuerza Aérea</h3>
                 <p><b>Domingos: </b> 8:30 AM</p>
                 
             </div>
@@ -59,23 +59,16 @@
                     <br>
                     </p>
             </div>
-            <!-- <div class="articulo" data-aos="zoom-in-right">
-                <i class="fas fa-church"></i>
-                <h3>Inphografics</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus maxime eius quo
-                    consequuntur magni. Quis voluptate repudiandae soluta quod mollitia!</p>
-                
-            </div> -->
         </div>
     </div>
 </section>
 <section class="questions contenedor">
     <section class="textos-questions">
         <h1>Nuestros Servicios</h1>
-        <p>los servicios que como parroquia brindamos a la feligresia
+        <p>Descubre los servicios que como parroquia brindamos a la feligresía
 
         </p>
-        <a href="index.php?page=servicios">Leer mas</a>
+        <a href="index.php?page=servicios">Leer más</a>
     </section>
     <img src="public/imgs/2.svg" alt="" data-aos="zoom-out-up" data-aos-duration="2000">
 </section>
@@ -83,9 +76,9 @@
 <section class="contenedor1 services">
     <img src="public/imgs/caliz.svg" alt="">
     <div class="box-skills">
-        <h4><i class="far fa-check-circle"></i> Eucaristias</h4>
-        <h4><i class="far fa-check-circle"></i> Confiesiones</h4>
-        <h4><i class="far fa-check-circle"></i> Grupos de Oracion</h4>
+        <h4><i class="far fa-check-circle"></i> Eucaristías</h4>
+        <h4><i class="far fa-check-circle"></i> Confesiones</h4>
+        <h4><i class="far fa-check-circle"></i> Grupos de Oración</h4>
         <h4><i class="far fa-check-circle"></i> Sacramentos</h4>
         <h4><i class="far fa-check-circle"></i> Pastorales</h4>
     </div>
@@ -98,14 +91,14 @@
             <img src="public/imgs/pater.jpg" alt="">
             <div class="contenido-texto-card">
                 <h4>Pbr. Javier Eduardo Martínez</h4>
-                <p>Parroco</p>
+                <p>Párroco</p>
             </div>
         </div>
         <div class="card">
             <img src="public/imgs/diacono.JPG" alt="">
             <div class="contenido-texto-card">
                 <h4>Alberto Enamorado</h4>
-                <p>Diacono</p>
+                <p>Diácono</p>
             </div>
         </div>
     </div>

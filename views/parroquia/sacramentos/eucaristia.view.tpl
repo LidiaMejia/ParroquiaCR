@@ -9,9 +9,7 @@
              <section>
                  <div class="infod" id="tituloSacra">
                  <h2><b>LA COMUNIÓN, ES RECIBIR A JESÚS SACRAMENTADO</b></h2>
-                 <p>La Eucaristía es el sacramento del Cuerpo y de la Sangre de Cristo
-                    En la comunión se recibe a Cristo, el alma se llena de gracia
-                    y se nos da una prenda de la vida eterna.</p>
+                 <p>La Eucaristía es el sacramento del Cuerpo y de la Sangre de Cristo. En la comunión se recibe a Cristo, el alma se llena de gracia y se nos da una prenda de la vida eterna.</p>
                 </div>
              </section>
 

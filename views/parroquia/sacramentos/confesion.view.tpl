@@ -9,8 +9,7 @@
              <section>
                  <div class="infod" id="tituloSacra">
                  <h2><b>LA CONFESIÓN, EL SACRAMENTO DE LA PENITENCIA</b></h2>
-                 <p>El sacramento de la Reconciliación es un sacramento de curación. Cuando yo voy a confesarme es para sanarme,
-                    curar mi alma, sanar el corazón y algo que hice y no funciona bien.</br></br>
+                 <p>El sacramento de la Reconciliación es un sacramento de curación. Cuando yo voy a confesarme es para sanarme, curar mi alma, sanar el corazón y algo que hice y no funciona bien.</br></br>
                     Es el Amor que Dios nos brinda de nuevo, después de haberlo traicionado.</p>
                 </div>
              </section>
@@ -43,8 +42,7 @@
                             (a no ser por olvido).</li>
                         <li>Que el arrepentimiento no sea sólo exterior sino que 
                             se sienta en el alma.</li>
-                        <li>Que sea sobrenatural, o sea no sólo por los males
-                            materiales que nos trae el pecado, sino porque con 
+                        <li>Que sea sobrenatural, o sea no sólo por los males materiales que nos trae el pecado, sino porque con 
                             él causamos un disgusto a Dios y nos vienen males 
                             para el alma y para la eternidad.</li>
                     </ul>
@@ -63,8 +61,7 @@
                                 <li>Debe ser completa, todos los pecados graves, 
                                     según su especie, número y circunstancias que 
                                     cambian la especie.</li>
-                                <li>Debe ser sencilla y humilde, con pocas palabras
-                                    y sin rodeos.</li>
+                                <li>Debe ser sencilla y humilde, con pocas palabras y sin rodeos.</li>
                             </ul>
                     </div>
                     </section>
@@ -74,13 +71,8 @@
                             <p id="tituloReq"><b>Satisfacción o Cumplir Penitecia</b></p>
                             <ul>
                                 <li>Es rezar o hace lo que el confesor me diga.</li>
-                                <li>Esta penitencia, ya sea una oración, una obra
-                                    de caridad, un sacrificio, un servicio, la
-                                    aceptación de la cruz, una lectura bíblica,
-                                    es para expiar, reparar el daño que hemos hecho
-                                    a Dios al pecar.</li>
-                                <li>Es expresión de nuestra voluntad de conversión
-                                    cristiana.</li>
+                                <li>Esta penitencia, ya sea una oración, una obra de caridad, un sacrificio, un servicio, la aceptación de la cruz, una lectura bíblica, es para expiar, reparar el daño que hemos hecho a Dios al pecar.</li>
+                                <li>Es expresión de nuestra voluntad de conversión cristiana.</li>
                             </ul>
                     </div>
                     </section>

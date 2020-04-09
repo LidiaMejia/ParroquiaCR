@@ -9,8 +9,7 @@
              <section>
                  <div class="infod" id="tituloSacra">
                  <h2><b>LA UNCIÓN DE LOS ENFERMOS</b></h2>
-                 <p>El sacramento de la unción de los enfermos es un sacramento de curación, el cual es un regalo de Dios que
-                    ayuda a sanar y purificar el espíritu de quien lo recibe.</p>
+                 <p>El sacramento de la unción de los enfermos es un sacramento de curación, el cual es un regalo de Dios que ayuda a sanar y purificar el espíritu de quien lo recibe.</p>
                 </div>
              </section>
 
@@ -25,12 +24,8 @@
                     <img src="public/imgs/uncion1.jpg" alt="uncion1"/> 
                     <p id="tituloReq"><b>Un don particular del Espíritu Santo</b>
                     <ul>
-                        <li>La primera gracia es de consuelo, paz y ánimo para
-                            vencer las dificultades propias de la enfermedad o
-                            la fragilidad de la vejez.</li> 
-                        <li>Es un don del Espíritu Santo que renueva la confianza
-                            y la fe en Dios y fortalece contra las tentaciones del
-                            maligno, como el desaliento y la desesperación.</li> 
+                        <li>La primera gracia es de consuelo, paz y ánimo para vencer las dificultades propias de la enfermedad o la fragilidad de la vejez.</li> 
+                        <li>Es un don del Espíritu Santo que renueva la confianza y la fe en Dios y fortalece contra las tentaciones del maligno, como el desaliento y la desesperación.</li> 
                         </p>
                         </ul>
                      

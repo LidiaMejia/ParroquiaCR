@@ -24,8 +24,7 @@
                 <img src="public/imgs/teacher.svg" alt="" class="imagen-about-us">
                 <div class="contenido-textos">
                     <h3><span>1</span>Primero</h3>
-                    <p> Facilitar que los laicos de la Parroquia profundicen y maduren progresivamente en la particularidad de
-                        la vocación laical y su misión de "...buscar el Reino de Dios tratando y ordenando,
+                    <p> Facilitar que los laicos de la Parroquia profundicen y maduren progresivamente en la particularidad de la vocación laical y su misión de "...buscar el Reino de Dios tratando y ordenando,
                          según Dios, los asuntos temporales” (LG 31).</p>
                     <h3><span>2</span>Segundo</h3>
                     <p>Preparar equipos de laicos comprometidos y testigos para "...ser 

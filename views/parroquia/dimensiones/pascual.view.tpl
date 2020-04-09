@@ -35,19 +35,11 @@
                 <p>
                                 <!-- Unas letras del primer parrafo salian al ldao de la imagen -->
                     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                    La
-                    Iglesia evangeliza y se evangeliza a sí misma con la
-                    belleza de la liturgia, la cual también es celebración de la
-                    actividad evangelizadora y fuente de un renovado
-                    impulso donativo.
+                    La Iglesia evangeliza y se evangeliza a sí misma con la belleza de la liturgia, la cual también es celebración de la actividad evangelizadora y fuente de un renovado impulso donativo.
                 </p>
 
                 <p>
-                    Se busca fortalecer la celebración de la fe del pueblo de Dios,
-                    tanto en forma comunitaria, mediante la acción
-                    litúrgica y la piedad popular, como de manera
-                    individual, mediante la oración personal y el
-                    encuentro con el Señor Jesús.
+                    Se busca fortalecer la celebración de la fe del pueblo de Dios, tanto en forma comunitaria, mediante la acción litúrgica y la piedad popular, como de manera individual, mediante la oración personal y el encuentro con el Señor Jesús.
                 </p>
 
                 <!-- LITURGICA -->
@@ -61,17 +53,10 @@
                                 <div class="info_pastoral">
                                     <h2>Pastoral Litúrgica</h2>
             
-                                    <p>La liturgia permite al
-                                            pueblo de Dios celebrar su fe, al participar de la mesa de la Palabra y el banquete eucarístico, obtener la gracia
-                                            santificante en la recepción de los sacramentos, orar en
-                                            comunidad y por la comunidad en la Liturgia de las
-                                            Horas y realizar la meditación orante de la Palabra en la
-                                            “Lectio Divina”.
+                                    <p>La liturgia permite al pueblo de Dios celebrar su fe, al participar de la mesa de la Palabra y el banquete eucarístico, obtener la gracia santificante en la recepción de los sacramentos, orar en comunidad y por la comunidad en la Liturgia de las Horas y realizar la meditación orante de la Palabra en la “Lectio Divina”.
                                     </p>
             
-                                    <p> <b>Objetivo Específico:</b> <br/> Fomentar la participación plena,
-                                        consciente y activa en las celebraciones litúrgicas de los
-                                        bautizados.
+                                    <p> <b>Objetivo Específico:</b> <br/> Fomentar la participación plena, consciente y activa en las celebraciones litúrgicas de los bautizados.
                                     </p>
                             </div>
         
@@ -93,8 +78,7 @@
                                             </li>
         
                                             <li>
-                                                Reorientación y desarrollo de las prácticas
-                                                devocionales.
+                                                Reorientación y desarrollo de las prácticas devocionales.
                                             </li>
                                         </ul>
                                     </div>
@@ -106,15 +90,11 @@
                                         <div class="soporte2"></div>
         
                                         <ul>
-                                            <li>Creación de un directorio de las principales
-                                                    devociones del pueblo de Dios con su fundamento
-                                                    evangélico y práctica concreta.
+                                            <li>Creación de un directorio de las principales devociones del pueblo de Dios con su fundamento evangélico y práctica concreta.
                                             </li>
     
                                             <li>
-                                                Realización de retiros con énfasis en el
-                                                plan de salvación, y en Cristo que se actualiza en la
-                                                liturgia.
+                                                Realización de retiros con énfasis en el plan de salvación, y en Cristo que se actualiza en la liturgia.
                                             </li>
                                         </ul>
                                     </div>

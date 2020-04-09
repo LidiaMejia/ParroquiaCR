@@ -34,12 +34,7 @@
             <section class="infod">
                 <p>
                     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                    En nuestra Arquidiócesis de Tegucigalpa, para realizar la
-                    comunión entre todas las comunidad y el Arzobispo,
-                    junto con el clero de la Arquidiócesis, existe la Vicaría de
-                    Pastoral que se encarga de animar, coordinar y
-                    acompañar, todas las actividades pastorales que se
-                    desarrollan en la misma Arquidiócesis.
+                    En nuestra Arquidiócesis de Tegucigalpa, para realizar la comunión entre todas las comunidad y el Arzobispo, junto con el clero de la Arquidiócesis, existe la Vicaría de Pastoral que se encarga de animar, coordinar y acompañar, todas las actividades pastorales que se desarrollan en la misma Arquidiócesis.
                 </p>
 
                 <!-- PASTORALES -->
@@ -50,15 +45,11 @@
                         <div class="soporte"></div> 
 
                         <ul>
-                            <li>La Vicaría de Pastoral está presidida por el Arzobispo
-                                quién delega en un sacerdote la dirección de la misma.
+                            <li>La Vicaría de Pastoral está presidida por el Arzobispo quién delega en un sacerdote la dirección de la misma.
                             </li>
 
                             <li>
-                                    Está integrada por todos los Decanos de las diferentes
-                                    Decanaturas en las que se encuentra organizada la
-                                    pastoral arquidiocesana. A dicho grupo de decanos se
-                                    les conoce como el Consejo de Decanos.
+                                Está integrada por todos los Decanos de las diferentes Decanaturas en las que se encuentra organizada la pastoral arquidiocesana. A dicho grupo de decanos se les conoce como el Consejo de Decanos.
                             </li>
                         </ul>
                     </div>
@@ -68,18 +59,11 @@
                         <div class="soporte"></div>
 
                         <ul>
-                            <li>Formadas por un número desigual de
-                                    parroquias, se conforman por razón geográfica y han
-                                    sido creadas como una respuesta organizativa de la
-                                    iglesia diocesana.
+                            <li>Formadas por un número desigual de parroquias, se conforman por razón geográfica y han sido creadas como una respuesta organizativa de la iglesia diocesana.
                             </li>
 
                             <li>
-                                En cada una de ellas debe existir un Consejo
-                                de Decanatura que es formado por todos los sacerdotes
-                                que trabajan en el área de dicha decanatura y por los
-                                coordinadores parroquiales de cada una de las
-                                Dimensiones de Parroquia.
+                                En cada una de ellas debe existir un Consejo de Decanatura que es formado por todos los sacerdotes que trabajan en el área de dicha decanatura y por los coordinadores parroquiales de cada una de las Dimensiones de Parroquia.
                             </li>
                         </ul>
                     </div>
