@@ -44,14 +44,14 @@
                     <div class="logo">
                         <img src="public/imgs/logoP.png" alt="">
                     </div>
-                    <div class="enlaces-header">
-                        <a href="index.php?page=index">Inicio</a>
-                        <a href="index.php?page=nosotros" >Nuestra Parroquia</a>
-                        <a href="index.php?page=sacramentos">Sacramentos</a>
-                        <a href="index.php?page=dimensiones">Dimensiones</a>
-                        <a href="index.php?page=pastorales">Pastorales</a>
-                        <a href="index.php?page=plataforma">Plataforma</a>
-                        <a href="index.php?page=servicios">Servicios</a>
+                    <div class="enlaces-header"> <!-- Las clases se reeemplazan por lo que traen los controladores para saber si esta active o no -->
+                        <a href="index.php?page=index" class="{{index}}">Inicio</a>
+                        <a href="index.php?page=nosotros" class="{{nosotros}}">Nuestra Parroquia</a>
+                        <a href="index.php?page=sacramentos" class="{{sacramentos}}">Sacramentos</a>
+                        <a href="index.php?page=dimensiones" class="{{dimensiones}}">Dimensiones</a>
+                        <a href="index.php?page=pastorales" class="{{pastorales}}">Pastorales</a>
+                        <a href="index.php?page=plataforma" class="{{plataforma}}">Plataforma</a>
+                        <a href="index.php?page=servicios" class="{{servicios}}">Servicios</a>
                     </div>
                     <div class="hamburguer">
                         <i class="fas fa-bars"></i>
