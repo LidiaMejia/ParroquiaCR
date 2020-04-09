@@ -1,12 +1,21 @@
 <?php
-/* Home Controller
- * 2014-10-14
- * Created By OJBA
- * Last Modification 2014-10-14 20:04
+
+/**
+ * Controlador de Home - Catalogo de Insignias Parroquia
+ * 
+ * @return void
  */
 
-  function run(){
-    renderizar("home",Array());
-  }
-  run();
+require_once "models/mantenimientos/productos.model.php";
+
+function run()
+{
+    $arrDataView = array();
+    $arrDataView["productos"] = productoCatalogo();
+
+    renderizar("home", $arrDataView); 
+}
+
+run();
+
 ?>
