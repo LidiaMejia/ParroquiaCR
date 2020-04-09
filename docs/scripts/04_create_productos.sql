@@ -11,7 +11,7 @@ CREATE TABLE `parroquia`.`productos` (
   `estprd` CHAR(3) NOT NULL,
   PRIMARY KEY (`codprd`));
 
-CREATE TABLE `dynapolls`.`carretilla` (
+CREATE TABLE `parroquia`.`carretilla` (
   `usercod` BIGINT(10) NOT NULL,
   `codprd` BIGINT(18) NOT NULL,
   `crrctd` INT(5) NOT NULL,
