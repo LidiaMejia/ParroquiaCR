@@ -12,7 +12,7 @@ CREATE TABLE `parroquia`.`productos` (
   PRIMARY KEY (`codprd`),
   UNIQUE INDEX `skuprd_UNIQUE`(`skuprd` ASC)); 
 
-CREATE TABLE `dynapolls`.`carretilla` (
+CREATE TABLE `parroquia`.`carretilla` (
   `usercod` BIGINT(10) NOT NULL,
   `codprd` BIGINT(18) NOT NULL,
   `crrctd` INT(5) NOT NULL,
