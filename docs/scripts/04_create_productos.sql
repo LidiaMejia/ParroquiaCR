@@ -31,7 +31,7 @@ CREATE TABLE `parroquia`.`carretilla` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
-CREATE TABLE `carretillaanon` (
+CREATE TABLE `parroquia`.`carretillaanon` (
   `anoncod` varchar(128) NOT NULL,
   `codprd` bigint(18) NOT NULL,
   `crrctd` int(5) NOT NULL,
