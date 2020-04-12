@@ -12,8 +12,9 @@
  function runCartMW()
  {
     $cartEntries = 0; //Contador de productos
-
     $cartAnonUID = '';
+
+    $isOk = cleanTimeOutCart(); //Eliminar las carretillas fuera de tiempo
 
     if(isset($_SESSION["cart_anon_UID"]))
     {

@@ -2,16 +2,13 @@
 
 require_once "libs/dao.php";
 
-//Tiempo que puede permanecer un producto en la carretilla Autenticada
-function getAuthTimeDelta()
-{
-    return 21600; //6 Horas // 6 * 60 * 60; // horas * minutos * segundo
-}
+//******************************************************* MANTENIMIENTO ********************************************************************/
 
-//Tiempo que puede permanecer un producto en la carretilla anonima
-function getUnAuthTimeDelta()
+function todosLosProductos()
 {
-    return 600; //10 minutos // 10 * 60; //h , m, s
+    $sqlSelect = "SELECT * FROM productos;";
+
+    return obtenerRegistros($sqlSelect);
 }
 
 
@@ -25,10 +22,105 @@ function obtenerUnProducto($codprd)
         );
 }
 
+//Insertar Nuevo Producto
+function insertProducto($dscprd, $sdscprd, $ldscprd, $skuprd, $catprd, $prcprd, $urlprd, $urlthbprd, $estprd) 
+{
+    $sqlInsert = "INSERT INTO productos (dscprd, sdscprd, ldscprd, skuprd, catprd, prcprd, urlprd, urlthbprd, estprd)
+                  VALUES ('%s', '%s', '%s', '%s', '%s', %lf, '%s', '%s', '%s');";
+
+    $isOk = ejecutarNonQuery(
+        sprintf(
+            $sqlInsert,
+            $dscprd,
+            $sdscprd,
+            $ldscprd,
+            $skuprd,
+            $catprd,
+            $prcprd,
+            '',
+            '',
+            $estprd
+        )
+    );
+
+    return getLastInserId();
+}
+
+//Actualizar Producto
+function updateProducto($dscprd, $sdscprd, $ldscprd, $skuprd, $catprd, $prcprd, $urlprd, $urlthbprd, $estprd, $codprd) 
+{
+    $sqlUpdate = "UPDATE productos SET dscprd = '%s', sdscprd = '%s',
+                  ldscprd = '%s', skuprd = '%s', catprd = '%s', prcprd = %lf, 
+                  estprd = '%s' WHERE codprd = %d;";
+
+    return ejecutarNonQuery(
+        sprintf(
+            $sqlUpdate,
+            $dscprd,
+            $sdscprd,
+            $ldscprd,
+            $skuprd,
+            $catprd,
+            $prcprd,
+            $estprd,
+            $codprd
+        )
+    );
+}
+
+//Borrar un Producto
+function deleteProducto($codprd)
+{
+    $sqlDelete = "DELETE FROM productos WHERE codprd = %d;";
+
+    return ejecutarNonQuery(
+        sprintf($sqlDelete, $codprd)
+    );
+}
+
+//Colocar Imagen del Producto
+function setImageProducto($url, $codprd, $type="PRT")
+{
+    $sqlUpdatePRT = "UPDATE productos SET urlprd = '%s' WHERE codprd = %d;";
+    $sqlUpdateTHB = "UPDATE productos SET urlthbprd = '%s' WHERE codprd = %d;";
+
+    $sqlUpdate = ($type === "PRT") ? $sqlUpdatePRT : $sqlUpdateTHB;
+
+    return ejecutarNonQuery(
+        sprintf($sqlUpdate, $url, $codprd)
+    );
+}
+
+
+//******************************************************* CATALOGO ************************************************************************/
+
+//Productos disponibles para la Venta
+function productoCatalogo()
+{
+    $sqlSelect = "SELECT codprd, dscprd, skuprd, urlthbprd, prcprd
+                  from productos where estprd in('ACT','DSC');";
+
+    $tmpProducto =  obtenerRegistros($sqlSelect);    
+    $assocProducto = array();
+
+    foreach ($tmpProducto as $producto) 
+    {
+        //Imagen predeterminada si no hay imagen
+        $assocProducto[$producto["codprd"]] = $producto;
+
+        if (preg_match('/^\s*$/', $producto["urlthbprd"])) 
+        {
+            $assocProducto[$producto["codprd"]]["urlthbprd"] = "public/imgs/noprodthb.png"; //Insertar la direccion de la imagen------------
+        }
+    }
+  
+    return $assocProducto;
+}
+
 //Obtener los datos de un producto del Catalogo
 function getOneProductoCatalogo($codprd)
 {
-    $sqlSelect = "SELECT codprd, dscprd, stkprd, skuprd, urlthbprd, prcprd
+    $sqlSelect = "SELECT codprd, dscprd, skuprd, urlthbprd, prcprd
                   from productos where  codprd=%d;";
 
     $tmpProducto =  obtenerRegistros(
@@ -60,6 +152,42 @@ function getOneProductoCatalogo($codprd)
 }
 
 
+//******************************************************* CARRETILLAS *********************************************************************/
+
+//Tiempo que puede permanecer un producto en la carretilla Autenticada
+function getAuthTimeDelta()
+{
+    return 21600; //6 Horas // 6 * 60 * 60; // horas * minutos * segundo
+}
+
+//Tiempo que puede permanecer un producto en la carretilla anonima 
+function getUnAuthTimeDelta()
+{
+    return 1200; //20 minutos // 20 * 60; //h , m, s 
+}
+
+
+//Agregar producto a carretilla anonima.
+function addToAnonCart($codprod, $uniqueUser, $cantidad, $precio)
+{
+    $productoCart = getOneProductoCatalogo($codprod);
+
+    if (count($productoCart)) 
+    {
+        $sqlins = "INSERT INTO `carretillaanon`
+        (`anoncod`, `codprd`, `crrctd`, `crrprc`, `crrfching`)
+        VALUES ('%s', %d, %d, %f, now())
+        ON DUPLICATE KEY UPDATE crrctd = crrctd + VALUES(crrctd),
+        crrfching = now();";
+
+        return ejecutarNonQuery(
+            sprintf($sqlins, $uniqueUser, $codprod, $cantidad, $precio)
+        );
+    }
+
+    return 0;
+}
+
 //Agregar un producto a la carretilla autenticada
 function addToAutCart($codprod, $usuario, $cantidad, $precio)
 {
@@ -77,6 +205,27 @@ function addToAutCart($codprod, $usuario, $cantidad, $precio)
         return ejecutarNonQuery(
             sprintf($sqlins, $usuario, $codprod, $cantidad, $precio)
         );
+    }
+
+    return 0;
+}
+
+
+
+//Obtener cantidad de productos que hay en la carretilla anonima de ese usuario que no han vencido
+function getCantProdAnon($uniqueUser)
+{
+    //Cantidad de productos que hay en la carretilla aninoma que no han vencido
+    $sqlstr = "SELECT count(*) AS productos FROM `carretillaanon`
+               WHERE anoncod = '%s' AND TIME_TO_SEC(TIMEDIFF(now(), crrfching)) <= %d;";
+
+    $data = obtenerUnRegistro(
+        sprintf($sqlstr, $uniqueUser, getUnAuthTimeDelta())
+    );
+
+    if (count($data) > 0)
+    {
+        return $data["productos"];
     }
 
     return 0;
@@ -101,20 +250,40 @@ function getCantProdAut($usercod)
     return 0;
 }
 
-//Obtener cantidad de productos que hay en la carretilla anonima de ese usuario que no han vencido
-function getCantProdAnon($uniqueUser)
-{
-    //Cantidad de productos que hay en la carretilla aninoma que no han vencido
-    $sqlstr = "SELECT count(*) AS productos FROM `carretillaanon`
-               WHERE anoncod = '%s' AND TIME_TO_SEC(TIMEDIFF(now(), crrfching)) <= %d;";
 
-    $data = obtenerUnRegistro(
-        sprintf($sqlstr, $uniqueUser, getUnAuthTimeDelta())
+//Eliminar un producto de la carretilla anonima.
+function delProdCartAnon($codprod, $uniqueUser, $cantidad)
+{
+    $productoCart = array();
+
+    $sqlSel = "select * from carretillaanon where anoncod='%s' and codprd=%d;";
+
+    $productoCart = obtenerUnRegistro(
+        sprintf($sqlSel, $uniqueUser, $codprod)
     );
 
-    if (count($data) > 0)
+    if (count($productoCart)) 
     {
-        return $data["productos"];
+        $newCantidad = $productoCart["crrctd"] - $cantidad;
+
+        if ($productoCart["crrctd"] - $cantidad > 0) 
+        {
+
+            $sqlupd = "UPDATE carretillaanon set crrctd = %d, crrfching = now()
+                      where anoncod='%s' and codprd=%d;";
+
+            return ejecutarNonQuery(
+                sprintf($sqlupd, $newCantidad, $uniqueUser, $codprod)
+            );
+        }
+        else
+        {
+            $sqldel = "DELETE from carretillaanon where anoncod='%s' and codprd=%d;";
+
+            return ejecutarNonQuery(
+                sprintf($sqldel, $uniqueUser, $codprod)
+            );
+        }
     }
 
     return 0;
@@ -135,17 +304,17 @@ function delProdCartAut($codprod, $usuario, $cantidad)
     if (count($productoCart)) 
     {
         //Se guarda la nueva cantidad
-        $newContidad = $productoCart["crrctd"] - $cantidad;
+        $newCantidad = $productoCart["crrctd"] - $cantidad;
 
         //Si queda todavia cantidad de ese producto en la carretilla
-        if ($newContidad > 0) 
+        if ($newCantidad > 0) 
         {
             //Solo se actualiza
             $sqlupd = "UPDATE carretilla set crrctd = %d, crrfching = now()
                 where usercod=%d and codprd=%d;";
 
             return ejecutarNonQuery(
-                sprintf($sqlupd, $newContidad, $usuario, $codprod)
+                sprintf($sqlupd, $newCantidad, $usuario, $codprod)
             );
         }
         else
@@ -162,6 +331,7 @@ function delProdCartAut($codprod, $usuario, $cantidad)
     return 0;
 }
 
+
 //Eliminar toda la carretilla autenticada.
 function delAllCartAut($usuario)
 {
@@ -172,31 +342,22 @@ function delAllCartAut($usuario)
     );
 }
 
-//Agregar producto a carretilla anonima.
-function addToAnonCart($codprod, $uniqueUser, $cantidad, $precio)
+//Eliminar toda la carretilla anonima.
+function delAllCartAnon($uniqueUser)
 {
-    $productoCart = getOneProductoCatalogo($codprod);
+    $sqlDel = "DELETE from carretillaanon where anoncod='%s';";
 
-    if (count($productoCart)) 
-    {
-        $sqlins = "INSERT INTO `carretillaanon`
-        (`anoncod`, `codprd`, `crrctd`, `crrprc`, `crrfching`)
-        VALUES ('%s', %d, %d, %f, now())
-        ON DUPLICATE KEY UPDATE crrctd = crrctd + VALUES(crrctd),
-        crrfching = now();";
-
-        return ejecutarNonQuery(
-            sprintf($sqlins, $uniqueUser, $codprod, $cantidad, $precio)
-        );
-    }
-
-    return 0;
+    return ejecutarNonQuery(
+        sprintf($sqlDel, $uniqueUser)
+    );
 }
+
+
 
 //Mostrar el detalle de la carretilla anonima.
 function getDetailCartAnon($usuario)
 {
-    $sqlstr = "select a.codprd, b.skuprd, b.dscprd, a.crrctd, a.crrprc
+    $sqlstr = "SELECT a.codprd, b.skuprd, b.dscprd, a.crrctd, a.crrprc
                from `carretillaanon` a inner join `productos` b on a.codprd = b.codprd
                where a.anoncod = '%s' and TIME_TO_SEC(TIMEDIFF(now(), a.crrfching)) <= %d;";
 
@@ -217,7 +378,7 @@ function getDetailCartAnon($usuario)
         $arrProductosFinal["totctd"] += $producto["crrctd"];
         $arrProductosFinal["total"] += ($producto["crrctd"] * $producto["crrprc"]);
         $arrProductosFinal["products"][] = $producto; //Todo se guarda aqui
-        $counter ++;
+        $counter++;
     }
 
     $arrProductosFinal["total"] = number_format($arrProductosFinal["total"], 2);
@@ -225,53 +386,45 @@ function getDetailCartAnon($usuario)
     return $arrProductosFinal;
 }
 
-//Eliminar toda la carretilla anonima.
-function delAllCartAnon($uniqueUser)
+//Mostrar el detalle de la carretilla autenticada
+function getDetailCartAut($usuario)
 {
-    $sqlDel = "DELETE from carretillaanon where anoncod='%s';";
+    $sqlstr = "SELECT a.codprd, b.skuprd, b.dscprd, a.crrctd, a.crrprc
+               from `carretilla` a inner join `productos` b on a.codprd = b.codprd
+               where a.usercod = %d and TIME_TO_SEC(TIMEDIFF(now(), a.crrfching)) <= %d;";
 
-    return ejecutarNonQuery(
-        sprintf($sqlDel, $uniqueUser)
+    $arrProductos = obtenerRegistros(
+        sprintf(
+            $sqlstr,
+            $usuario,
+            getAuthTimeDelta()
+        )
     );
-}
+    
+    $arrProductosFinal = array();
+    $arrProductosFinal["products"] = array();
+    $arrProductosFinal["totctd"] = 0;
+    $arrProductosFinal["total"] = 0;
+    $counter = 1;
 
-//Eliminar un producto de la carretilla anonima.
-function delProdCartAnon($codprod, $uniqueUser, $cantidad)
-{
-    $productoCart = array();
-
-    $sqlSel = "select * from carretillaanon where anoncod='%s' and codprd=%d;";
-
-    $productoCart = obtenerUnRegistro(
-        sprintf($sqlSel, $uniqueUser, $codprod)
-    );
-
-    if (count($productoCart)) 
+    foreach ($arrProductos as $producto) 
     {
-        $newContidad = $productoCart["crrctd"] - $cantidad;
-
-        if ($productoCart["crrctd"] - $cantidad > 0) 
-        {
-
-            $sqlupd = "UPDATE carretillaanon set crrctd = %d, crrfching = now()
-                      where anoncod='%s' and codprd=%d;";
-
-            return ejecutarNonQuery(
-                sprintf($sqlupd, $newContidad, $uniqueUser, $codprod)
-            );
-        }
-        else
-        {
-            $sqldel = "DELETE from carretillaanon where anoncod='%s' and codprd=%d;";
-
-            return ejecutarNonQuery(
-                sprintf($sqldel, $uniqueUser, $codprod)
-            );
-        }
+        $producto["line"] = $counter;
+        $producto["total"] = number_format($producto["crrctd"] * $producto["crrprc"],2);
+        $arrProductosFinal["totctd"] += $producto["crrctd"];
+        $arrProductosFinal["total"] += ($producto["crrctd"] * $producto["crrprc"]);
+        $arrProductosFinal["products"][] = $producto;
+        $counter++;
     }
 
-    return 0;
+    $arrProductosFinal["total"] = number_format($arrProductosFinal["total"], 2);
+
+    return $arrProductosFinal;
 }
+
+
+
+
 
 //Pasa los productos de la carretilla anonima a la carretilla autenticada
 function passAnonToAutCart($uniqueUser, $user)
@@ -305,6 +458,40 @@ function passAnonToAutCart($uniqueUser, $user)
 
     //Se retorna cantidad de productos que hay en la carretilla autenticada
     return getCantProdAut($user);
+}
+
+//Eliminar las carretillas fuera de tiempo
+function cleanTimeOutCart()
+{
+    $contador = 0;
+
+    iniciarTransaccion();
+
+    //CARRETILLA ANONIMA
+    $sqlDel = "DELETE from carretillaanon
+               where TIME_TO_SEC(TIMEDIFF(now(), crrfching)) > %d";
+
+    $contador += ejecutarNonQuery(
+        sprintf(
+            $sqlDel,
+            getUnAuthTimeDelta()
+        )
+    );
+
+    // CARRETILLA AUTENTICADA
+    $sqlDel = "DELETE from carretilla
+               where TIME_TO_SEC(TIMEDIFF(now(), crrfching)) > %d";
+
+    $contador += ejecutarNonQuery(
+        sprintf(
+            $sqlDel,
+            getAuthTimeDelta()
+        )
+    );
+
+    terminarTransaccion();
+
+    return $contador;
 }
 
 
