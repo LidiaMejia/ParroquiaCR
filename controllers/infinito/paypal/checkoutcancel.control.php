@@ -5,9 +5,11 @@
  *
  * @return void
  */
+
 function run()
 {
     renderizar("infinito/paypal/checkoutcancel", array());
 }
 run();
+
 ?>

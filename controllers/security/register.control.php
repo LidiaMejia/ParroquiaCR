@@ -19,7 +19,7 @@ function run()
     $arrViewData['timestamp'] = '';
     $arrViewData['password'] = '';
     $arrViewData['passwordCnf'] = ''; 
-    $arrViewData['userType'] = 'PUB'; //Tiene acceso a la parte publica
+    $arrViewData['userType'] = 'CLT'; //Cliente - Tiene acceso a la parte publica
 
     //Para los errores a NIVEL DE SERVIDOR
     $arrViewData['hasErrors'] = false;
@@ -87,9 +87,10 @@ function run()
                     if($result)
                     {
                         //Asegurarse de que el rol existe
-                        agregarRolaUsuario('Publico', $result);
+                        //agregarRolaUsuario('Publico', $result);
 
                         //Aqui se pueden agregar roles especificos
+                        agregarRolaUsuario('CMP', $result); //Comprador
 
                         redirectWithMessage("Cuenta Creada Satisfactoriamente, Favor Ingresar", "index.php?page=login");
                     }

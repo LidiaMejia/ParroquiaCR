@@ -494,39 +494,51 @@ function cleanTimeOutCart()
     return $contador;
 }
 
+
+//******************************************************* CHECKOUT *********************************************************************/
+
+//Resetea el tiempo de la carretilla con la fecha de hoy cuando va a checkout
 function resetCartTime($usuario)
 {
     $sqlUpd = "UPDATE carretilla set crrfching = now() where usercod=%d;";
+
     return ejecutarNonQuery(
-        sprintf(
-            $sqlUpd,
-            $usuario
-        )
+        sprintf($sqlUpd, $usuario)
     );
 }
 
-
+//Crear Factura y Factura_Detalle y Factura_FormaPago
 function crearFactura($usuario, $jsonPayment)
 {
     $fctcod = false;
+
     iniciarTransaccion();
+
     //Crear la factura
     $sqlins = "INSERT INTO `factura`
     ( `fctfch`, `userCode`, `fctEst`, `fctMonto`,
       `fctShip`, `fctTotal`, `fctPayRef`, `fctShpAddr`)
     VALUES ( now(), %d, 'APR', 0, 0, 0, '', '');";
-    if (ejecutarNonQuery(sprintf($sqlins, $usuario))) {
+
+//Se ejecuta el insert
+    if (ejecutarNonQuery(sprintf($sqlins, $usuario))) 
+    {
         //Crear detalle de factura
-        $fctcod = getLastInserId();
-        $carretilla = getDetailCartAut($usuario)["products"];
+        $fctcod = getLastInserId(); //Se toma el ultimo ID insertado
+        $carretilla = getDetailCartAut($usuario)["products"]; //Detalle de la carretilla autenticada que se pago
         $subtotal = 0;
         $total = 0;
+
+        //query para insertar el detalle de la factura
         $sqldetins = "INSERT INTO `factura_detalle`
             (`fctcod`, `codprd`, `fctDsc`, `fctCtd`, `fctPrc`)
             VALUES
             (%d, %d, '%s', %d, %f);";
      
-        foreach ($carretilla as $producto) {
+        //Por cada producto de la carretilla se inserta en el detalle y se disminuye el stock
+        foreach ($carretilla as $producto) 
+        {
+            //Vamos obteniendo el Total y Subtotal para la Factura
             $subtotal += ($producto["crrctd"] * $producto["crrprc"]);
             $total += ($producto["crrctd"] * $producto["crrprc"]);
             ejecutarNonQuery(
@@ -539,18 +551,13 @@ function crearFactura($usuario, $jsonPayment)
                     $producto["crrprc"]
                 )
             );
-            ejecutarNonQuery(
-                sprintf(
-                    $sqlupdate,
-                    $producto["crrctd"],
-                    $producto["codprd"]
-                )
-            );
         }
+
         //Actualizar los totales de la factura
-        $sqlUpdtotal = "update `factura` set
+        $sqlUpdtotal = "UPDATE `factura` set
             `fctMonto` = %f, `fctShip`=%f, `fctTotal`=%f
             where `fctcod` = %d;";
+
         ejecutarNonQuery(
             sprintf(
                 $sqlUpdtotal,
@@ -560,25 +567,34 @@ function crearFactura($usuario, $jsonPayment)
                 $fctcod
             )
         );
+
         //Forma de pago de la factura
         $sqlInsFrmPago = "INSERT INTO `factura_forma_pago`
             (`fctcod`, `fctfrmpago`, `fctfrmdata`)
             VALUES
             (%d, 'PAYPAL', '%s');";
+
         ejecutarNonQuery(
             sprintf(
                 $sqlInsFrmPago,
                 $fctcod,
-                $jsonPayment
+                $jsonPayment //Respuesta de Pasarela de Pago
             )
         );
-        //Eliminar carretilla del usuario.
+
+        //Eliminar carretilla del usuario. 
         delAllCartAut($usuario);
-    } else {
+
+    }
+    else
+    {
         terminarTransaccion(false);
         return false;
     }
+
     terminarTransaccion(true);
+
+    //Retornar codigo de factura que se acaba de crear
     return $fctcod;
 }
 

@@ -24,7 +24,7 @@
     if(mw_estaLogueado())
     {
         //Se obtiene el usuario logueado
-        $usuario = $_SESSION["userLogged"];
+        $usuario = $_SESSION["userCode"];
 
         //Si no trajo vacio de la sesion
         if($cartAnonUID !== '')
