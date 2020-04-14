@@ -12,6 +12,27 @@ require_once 'models/security/security.model.php';
  */
 function run()
 {
+    //Añadir linea debajo de la pestaña que esta seleccionada en el menu
+    addToContext("index","");
+    addToContext("nosotros","");
+    addToContext("sacramentos","");
+    addToContext("dimensiones","");
+    addToContext("pastorales","");
+    addToContext("plataforma","");
+    addToContext("servicios","");
+    addToContext("home","");
+    addToContext("login","active");
+    addToContext("register",""); 
+
+    addJsRef('public/js/jquery-1.8.2.min.js');
+    addJsRef('public/js/supersized.3.2.7.min.js');
+    addJsRef('public/js/supersized-init.js');
+    addJsRef('public/js/scripts.js');
+
+    addCssRef('public/css/reset.css');
+    addCssRef('public/css/supersized.css');
+    addCssRef('public/css/style.css');
+
     $loginData = array(
       "errors" => array(),
       "tocken" => "",
@@ -79,18 +100,6 @@ function run()
             renderizar("security/login", $loginData);
         }
     }
-
-    //Añadir linea debajo de la pestaña que esta seleccionada en el menu
-    addToContext("index","");
-    addToContext("nosotros","");
-    addToContext("sacramentos","");
-    addToContext("dimensiones","");
-    addToContext("pastorales","");
-    addToContext("plataforma","");
-    addToContext("servicios","");
-    addToContext("home","");
-    addToContext("login","active");
-    addToContext("register","");
 }
 
 /**
