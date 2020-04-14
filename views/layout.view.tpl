@@ -52,6 +52,9 @@
                         <a href="index.php?page=pastorales" class="{{pastorales}}">Pastorales</a>
                         <a href="index.php?page=plataforma" class="{{plataforma}}">Plataforma</a>
                         <a href="index.php?page=servicios" class="{{servicios}}">Servicios</a>
+                        <a href="index.php?page=home" class="{{home}}">Donación</a>
+                        <a href="index.php?page=login" class="{{login}}">Iniciar Sesión</a>
+                        <a href="index.php?page=register" class="{{register}}">Crear Cuenta</a>
                     </div>
                     <div class="hamburguer">
                         <i class="fas fa-bars"></i>

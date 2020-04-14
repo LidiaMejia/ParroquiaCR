@@ -22,6 +22,9 @@
     addToContext("pastorales","active");
     addToContext("plataforma","");
     addToContext("servicios","");
+    addToContext("home","");
+    addToContext("login","");
+    addToContext("register","");
 
     renderizar("parroquia/pastorales", $arrViewData); 
  }  

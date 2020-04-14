@@ -91,7 +91,7 @@
 
                         <div class="col-l-3 col-m-3 col-s-12 ">
                             <div class="logos">
-                            <a title="Solicitud" href="index.php?page=formulario1"><img src="public/imgs/info.png" alt="logosolicitud"/></a>
+                            <a title="Solicitud" href="index.php?page=formSacra"><img src="public/imgs/info.png" alt="logosolicitud"/></a>
                             <h2><b>Solicitud de información</b></h2>
                             </div>
                         </div>

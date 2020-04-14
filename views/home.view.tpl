@@ -1,8 +1,11 @@
 <!-- Por cada producto se mostrara una cartita en el inicio de la pagina -->
 
-<section class="cards row">
+<h1>¡Frase motivadora para Donar XD!</h1>
+
+<section class="card row">
+  <h2>Categoria 1</h2>
   {{foreach productos}}
-    <section class="col-12 col-sm-6 col-md-3 m-padding">
+    <section class="col-sm-6 col-md-3 m-padding">
       <div class="card col-13 depth-2 m-padding">
 
         <span class="col-sm-12 center depth-1">
@@ -14,7 +17,7 @@
 
 
         <!-- Mostrando codigo interno y descripcion del producto -->
-        <span class="col-112 center depth-1 m-padding card-desc">
+        <span class="col-112 col-12 center depth-1 m-padding card-desc">
           <span class="card-side">{{skuprd}}</span>
           <span class="col-12">{{dscprd}}</span>
         </span>
@@ -27,6 +30,39 @@
 
       </div>
     </section>
+  {{endfor productos}} 
+</section>
+</br>
+
+<section class="card row">
+  <h2>Categoria 2</h2>
+  {{foreach productos}}
+  <section class="col-sm-6 col-md-3 m-padding">
+    <div class="card col-13 depth-2 m-padding">
+
+      <span class="col-sm-12 center depth-1">
+        <!-- Si existe imagen pequeña la muestra -->
+        {{if urlthbprd}}
+        <img src="{{urlthbprd}}" alt="{{codprd}} {{dscprd}}" class="imgthumb center" />
+        {{endif urlthbprd}}
+      </span>
+
+
+      <!-- Mostrando codigo interno y descripcion del producto -->
+      <span class="col-112 col-12 center depth-1 m-padding card-desc">
+        <span class="card-side">{{skuprd}}</span>
+        <span class="col-12">{{dscprd}}</span>
+      </span>
+
+      <!-- Boton para añadir a la carretilla -->
+      <span class="col-12 bold center m-padding">
+        <a href="index.php?page=addtocart&codprd={{codprd}}" class="l-padding btn btn-primary col-12 sendToCart"> L
+          {{prcprd}} </a>
+      </span>
+      </span>
+
+    </div>
+  </section>
   {{endfor productos}}
 </section>
 

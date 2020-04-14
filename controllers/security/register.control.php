@@ -117,6 +117,18 @@ function run()
     //libs / Utilities
     //hay una funcion para poder agregar una js (Se escribe su ruta relativa)
     addJsRef('public/js/validators.js'); 
+
+    //Añadir linea debajo de la pestaña que esta seleccionada en el menu
+    addToContext("index","");
+    addToContext("nosotros","");
+    addToContext("sacramentos","");
+    addToContext("dimensiones","");
+    addToContext("pastorales","");
+    addToContext("plataforma","");
+    addToContext("servicios","");
+    addToContext("home","");
+    addToContext("login","");
+    addToContext("register","active");
     
     renderizar("register", $arrViewData);
 }

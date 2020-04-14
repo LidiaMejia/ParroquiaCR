@@ -28,7 +28,7 @@
 		<div class="wrap-contact100">
 			<form class="contact100-form validate-form">
 				<span class="contact100-form-title">
-					SOLICITUD DE INFORMACION SOBRE SACRAMENTO
+					SOLICITUD DE INFORMACIÓN SOBRE SACRAMENTO
 				</span>
 
 				<div class="wrap-input100 validate-input bg1" data-validate="Por favor ingrese su Nombre">
@@ -37,7 +37,7 @@
 				</div>
 
 				<div class="wrap-contact100-form-radio">
-					<span class="label-input100">Genero</span>
+					<span class="label-input100">Género</span>
 
 					<div class="contact100-form-radio m-t-15">
 						<input class="input-radio100" id="radio1" type="radio" name="type-product" value="physical" checked="checked">
@@ -67,17 +67,17 @@
 				</div>
 
 				<div class="wrap-input100 input100-select bg1">
-					<span class="label-input100">Sacramento del que desea informacion</span>
+					<span class="label-input100">Sacramento del que desea información</span>
 					<div>
 						<select class="js-select2" name="service">
 							<option>Elija uno</option>
 							<option>Bautismo</option>
-							<option>Primera Comunion</option>
-							<option>Confirmacion</option>
-							<option>Eucaristia</option>
+							<option>Primera Comunión</option>
+							<option>Confirmación</option>
+							<option>Eucaristía</option>
 	            <option>Orden Sacerdotal</option>
 	            <option>Matrimonio</option>
-	            <option>Uncion de los enfermos</option>
+	            <option>Unción de los enfermos</option>
 						</select>
 						<div class="dropDownSelect2"></div>
 					</div>
@@ -131,7 +131,7 @@
 		})
 	</script>
 <!--===============================================================================================-->
-	<script src="public/js/main.js"></script>
+	<script src="public/js/formSacra.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>

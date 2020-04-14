@@ -19,6 +19,8 @@
 
 </head>
 
+<body>
+
         <fieldset class="row right">
             <button id="btnNuevaCuenta">Nueva Cuenta</button> &nbsp;
         </fieldset>

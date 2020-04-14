@@ -98,6 +98,10 @@ case "confesion":
     include_once "controllers/parroquia/sacramentos/confesion.control.php";
     die();
 
+case "formSacra":
+    include_once "controllers/parroquia/sacramentos/formSacra.control.php";
+die();
+
 //dimensiones
 case "samaritana":
   include_once "controllers/parroquia/dimensiones/samaritana.control.php";
