@@ -28,10 +28,10 @@ function run()
     $arrViewData['skuprd'] = '';
 
     ////////// MODIFICAR CON CATEGORIAS!!!!!!
-    $arrViewData['typprd'] = '';
-    $arrViewData['typeRTLTrue'] = '';
-    $arrViewData['typeSRVTrue'] = '';
-    $arrViewData['typeISKTrue'] = '';
+    $arrViewData['catprd'] = '';
+    $arrViewData['typeLBATrue'] = '';
+    $arrViewData['typeCOMTrue'] = '';
+    $arrViewData['typeCLNTrue'] = '';
 
     $arrViewData['prcprd'] = 0;
     $arrViewData['urlprd'] = '';
@@ -74,7 +74,7 @@ function run()
             $arrViewData['sdscprd'] = $_POST['sdscprd'];
             $arrViewData['ldscprd'] = $_POST['ldscprd'];
             $arrViewData['skuprd'] = $_POST['skuprd'];
-            $arrViewData['typprd'] = $_POST['typprd']; ///CAMBIAR CAT!!!!
+            $arrViewData['catprd'] = $_POST['catprd'];
             $arrViewData['prcprd'] = floatval($_POST['prcprd']);
             $arrViewData['urlprd'] = $_POST['urlprd'];
             $arrViewData['urlthbprd'] = $_POST['urlthbprd'];
@@ -86,7 +86,7 @@ function run()
             {
                 case 'INS':
                     insertProducto($arrViewData['dscprd'], $arrViewData['sdscprd'], $arrViewData['ldscprd'], $arrViewData['skuprd'],
-                                   $arrViewData['typprd'], $arrViewData['prcprd'],  $arrViewData['urlprd'], $arrViewData['urlthbprd'],
+                                   $arrViewData['catprd'], $arrViewData['prcprd'],  $arrViewData['urlprd'], $arrViewData['urlthbprd'],
                                    $arrViewData['estprd']);
 
                     redirectWithMessage("Producto agregado exitosamente", "index.php?page=productos");
@@ -94,7 +94,7 @@ function run()
 
                 case 'UPD':
                     updateProducto($arrViewData['dscprd'], $arrViewData['sdscprd'], $arrViewData['ldscprd'], $arrViewData['skuprd'],
-                                   $arrViewData['typprd'], $arrViewData['prcprd'],  $arrViewData['urlprd'], $arrViewData['urlthbprd'],
+                                   $arrViewData['catprd'], $arrViewData['prcprd'],  $arrViewData['urlprd'], $arrViewData['urlthbprd'],
                                    $arrViewData['estprd'], $arrViewData['codprd']
                     );
 
@@ -120,9 +120,9 @@ function run()
 
     $arrViewData['modedsc'] = sprintf($arrModeDsc[$arrViewData['mode']], $arrViewData['codprd'], $arrViewData['dscprd']);
 
-    $arrViewData['typeRTLTrue'] = ($arrViewData['typprd'] === "RTL")? "selected" : "";
-    $arrViewData['typeSRVTrue'] = ($arrViewData['typprd'] === "SRV")? "selected" : "";
-    $arrViewData['typeISKTrue'] = ($arrViewData['typprd'] === "ISK")? "selected" : "";
+    $arrViewData['typeLBATrue'] = ($arrViewData['catprd'] === "LBA")? "selected" : "";
+    $arrViewData['typeCOMTrue'] = ($arrViewData['catprd'] === "COM")? "selected" : "";
+    $arrViewData['typeCLNTrue'] = ($arrViewData['catprd'] === "CLN")? "selected" : "";
 
     $arrViewData['estACTTrue'] = ($arrViewData['estprd'] === "ACT")? "selected" : "";
     $arrViewData['estINATrue'] = ($arrViewData['estprd'] === "INA")? "selected" : "";

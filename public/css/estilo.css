@@ -36,7 +36,7 @@ section {
   width: 100%;
   top: 0px;
   left: 0px;
-  background-color: #957862;
+  background-color: #826857; /*#957862;*/ 
   box-shadow: 0px 0px 2px rgba(0, 0, 0, .8);
   z-index: 9999;
 }
@@ -195,14 +195,14 @@ section {
   margin: 0px;
   text-align: center;
   padding: 0.5em;
-  background-color: #5F3924;
+  background-color: #826857;/*#5F3924;*/
   color: white;
   width: 100%;
 }
 
 pre {
-  background-color: #333;
-  color: #1A9626;
+  background-color: #1e477a;/*#333;*/
+  color: #fff;/*#1A9626;*/
   padding: 1em;
   border-radius: 3px;
   font-size: 0.8em;

@@ -218,6 +218,25 @@ case "programa":
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
  die();
 
+ //*Productos
+ case "productos":
+      ($logged)?
+      include_once "controllers/mantenimientos/productos.control.php":
+      mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+ die();
+
+  case "producto":
+      ($logged)?
+      include_once "controllers/mantenimientos/producto.control.php":
+      mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+ die();
+
+  case "productoimg":
+      ($logged)?
+      include_once "controllers/mantenimientos/productoimg.control.php":
+      mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+ die();
+
  //*Carretilla
   case "cartAut":
     include_once "controllers/infinito/cartAut.control.php";
