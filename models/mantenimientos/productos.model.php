@@ -598,5 +598,28 @@ function crearFactura($usuario, $jsonPayment)
     return $fctcod;
 }
 
+function categoriaCatalogo($catprd)
+{
+    $sqlSelect = "SELECT codprd, dscprd, skuprd, urlthbprd, prcprd
+                  from productos where catprd = '%s' and estprd in('ACT','DSC');";
+
+    $tmpProducto =  obtenerRegistros($sqlSelect);    
+    $assocProducto = array();
+
+    foreach ($tmpProducto as $producto) 
+    {
+        //Imagen predeterminada si no hay imagen
+        $assocProducto[$producto["codprd"]] = $producto;
+
+        if (preg_match('/^\s*$/', $producto["urlthbprd"])) 
+        {
+            $assocProducto[$producto["codprd"]]["urlthbprd"] = "public/imgs/noprodthb.png"; //Insertar la direccion de la imagen------------
+        }
+    }
+  
+    return $assocProducto;
+}
+
+
 
 ?>
