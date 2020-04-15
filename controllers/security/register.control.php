@@ -91,7 +91,7 @@ function run()
                         //agregarRolaUsuario('Publico', $result);
 
                         //Aqui se pueden agregar roles especificos
-                        //agregarRolaUsuario('CMP', $result); //Comprador
+                        agregarRolaUsuario('CMP', $result); //Comprador
 
                         redirectWithMessage("Cuenta Creada Satisfactoriamente, Favor Ingresar", "index.php?page=login");
                     }

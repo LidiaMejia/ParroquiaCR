@@ -11,10 +11,10 @@ function generarMenu($usercod)
         $menu[] = array("mdlprg"=>"dashboard","mdldsc"=>"Inicio");
     }
 
-    if (isAuthorized('album', $usercod)) 
-    {
-        $menu[] = array("mdlprg"=>"album","mdldsc"=>"Álbum");
-    }
+    // if (isAuthorized('album', $usercod)) 
+    // {
+    //     $menu[] = array("mdlprg"=>"album","mdldsc"=>"Álbum");
+    // }
 
     //Agregar Nuevos o Partes del Menu (Recuerde no Sobre Cargaer)
     // Perfil Administrativo
