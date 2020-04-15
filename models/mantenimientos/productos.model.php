@@ -122,7 +122,10 @@ function categoriaCatalogo($catprd)
     $sqlSelect = "SELECT codprd, dscprd, skuprd, urlthbprd, prcprd
                   from productos where catprd = '%s' and estprd in('ACT','DSC');";
 
-    $tmpProducto =  obtenerRegistros($sqlSelect);    
+    $tmpProducto =  obtenerRegistros(
+        sprintf($sqlSelect, $catprd)
+    );    
+    
     $assocProducto = array();
 
     foreach ($tmpProducto as $producto) 

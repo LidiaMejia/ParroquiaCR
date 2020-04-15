@@ -9,9 +9,11 @@
   <p id="p2">Podrás revisar tus insignias en el Álbum al iniciar sesión. ¡Completa toda la colección y presúmela con nosotros en nuestras redes sociales!</p>
 </section>
 
-<section class="card row"> 
-  <h2>Categoria 1</h2>
-  {{foreach productos}}
+<section class="row"> 
+  <section class="textobasico">
+    <h3><b>Libra del Amor</b></h3>
+  </section>
+  {{foreach libra}}
     <section class="col-sm-6 col-md-3 m-padding">
       <div class="card col-13 depth-2 m-padding">
 
@@ -37,7 +39,188 @@
 
       </div>
     </section>
-  {{endfor productos}} 
+  {{endfor libra}} 
+</section>
+</br>
+</br>
+
+<section class="row">
+  <section class="textobasico">
+    <h3><b>Comedor</b></h3>
+  </section>
+  {{foreach comedor}}
+  <section class="col-sm-6 col-md-3 m-padding">
+    <div class="card col-13 depth-2 m-padding">
+
+      <span class="col-sm-12 center depth-1">
+        <!-- Si existe imagen pequeña la muestra -->
+        {{if urlthbprd}}
+        <img src="{{urlthbprd}}" alt="{{codprd}} {{dscprd}}" class="imgthumb center" />
+        {{endif urlthbprd}}
+      </span>
+
+
+      <!-- Mostrando codigo interno y descripcion del producto -->
+      <span class="col-112 col-12 center depth-1 m-padding card-desc">
+        <span class="card-side">{{skuprd}}</span>
+        <span class="col-12">{{dscprd}}</span>
+      </span>
+
+      <!-- Boton para añadir a la carretilla -->
+      <span class="col-12 bold center m-padding">
+        <a href="index.php?page=addToCart&codprd={{codprd}}" class="l-padding btn btn-primary col-12 sendToCart"> L
+          {{prcprd}}</a>
+      </span>
+      </span>
+
+    </div>
+  </section>
+  {{endfor comedor}}
+</section>
+</br>
+</br>
+
+<section class="row">
+    <section class="textobasico">
+      <h3><b>Clínica</b></h3>
+    </section>
+  {{foreach clinica}}
+  <section class="col-sm-6 col-md-3 m-padding">
+    <div class="card col-13 depth-2 m-padding">
+
+      <span class="col-sm-12 center depth-1">
+        <!-- Si existe imagen pequeña la muestra -->
+        {{if urlthbprd}}
+        <img src="{{urlthbprd}}" alt="{{codprd}} {{dscprd}}" class="imgthumb center" />
+        {{endif urlthbprd}}
+      </span>
+
+
+      <!-- Mostrando codigo interno y descripcion del producto -->
+      <span class="col-112 col-12 center depth-1 m-padding card-desc">
+        <span class="card-side">{{skuprd}}</span>
+        <span class="col-12">{{dscprd}}</span>
+      </span>
+
+      <!-- Boton para añadir a la carretilla -->
+      <span class="col-12 bold center m-padding">
+        <a href="index.php?page=addToCart&codprd={{codprd}}" class="l-padding btn btn-primary col-12 sendToCart"> L
+          {{prcprd}}</a>
+      </span>
+      </span>
+
+    </div>
+  </section>
+  {{endfor clinica}}
+</section>
+</br>
+</br>
+
+<section class="row">
+    <section class="textobasico">
+      <h3><b>Obras Sociales</b></h3>
+    </section>
+  {{foreach sociales}}
+  <section class="col-sm-6 col-md-3 m-padding">
+    <div class="card col-13 depth-2 m-padding">
+
+      <span class="col-sm-12 center depth-1">
+        <!-- Si existe imagen pequeña la muestra -->
+        {{if urlthbprd}}
+        <img src="{{urlthbprd}}" alt="{{codprd}} {{dscprd}}" class="imgthumb center" />
+        {{endif urlthbprd}}
+      </span>
+
+
+      <!-- Mostrando codigo interno y descripcion del producto -->
+      <span class="col-112 col-12 center depth-1 m-padding card-desc">
+        <span class="card-side">{{skuprd}}</span>
+        <span class="col-12">{{dscprd}}</span>
+      </span>
+
+      <!-- Boton para añadir a la carretilla -->
+      <span class="col-12 bold center m-padding">
+        <a href="index.php?page=addToCart&codprd={{codprd}}" class="l-padding btn btn-primary col-12 sendToCart"> L
+          {{prcprd}}</a>
+      </span>
+      </span>
+
+    </div>
+  </section>
+  {{endfor sociales}}
+</section>
+</br>
+</br>
+
+<section class="row">
+      <section class="textobasico">
+        <h3><b>Obras de Remodelación de la Iglesia</b></h3>
+      </section>
+  {{foreach remodelacion}}
+  <section class="col-sm-6 col-md-3 m-padding">
+    <div class="card col-13 depth-2 m-padding">
+
+      <span class="col-sm-12 center depth-1">
+        <!-- Si existe imagen pequeña la muestra -->
+        {{if urlthbprd}}
+        <img src="{{urlthbprd}}" alt="{{codprd}} {{dscprd}}" class="imgthumb center" />
+        {{endif urlthbprd}}
+      </span>
+
+
+      <!-- Mostrando codigo interno y descripcion del producto -->
+      <span class="col-112 col-12 center depth-1 m-padding card-desc">
+        <span class="card-side">{{skuprd}}</span>
+        <span class="col-12">{{dscprd}}</span>
+      </span>
+
+      <!-- Boton para añadir a la carretilla -->
+      <span class="col-12 bold center m-padding">
+        <a href="index.php?page=addToCart&codprd={{codprd}}" class="l-padding btn btn-primary col-12 sendToCart"> L
+          {{prcprd}}</a>
+      </span>
+      </span>
+
+    </div>
+  </section>
+  {{endfor remodelacion}}
+</section>
+</br>
+</br>
+
+<section class="row">
+        <section class="textobasico">
+          <h3><b>Apadrinar niños para Escuelas</b>
+          </h3>
+        </section>
+  {{foreach apadrinar}}
+  <section class="col-sm-6 col-md-3 m-padding">
+    <div class="card col-13 depth-2 m-padding">
+
+      <span class="col-sm-12 center depth-1">
+        <!-- Si existe imagen pequeña la muestra -->
+        {{if urlthbprd}}
+        <img src="{{urlthbprd}}" alt="{{codprd}} {{dscprd}}" class="imgthumb center" />
+        {{endif urlthbprd}}
+      </span>
+
+
+      <!-- Mostrando codigo interno y descripcion del producto -->
+      <span class="col-112 col-12 center depth-1 m-padding card-desc">
+        <span class="card-side">{{skuprd}}</span>
+        <span class="col-12">{{dscprd}}</span>
+      </span>
+
+      <!-- Boton para añadir a la carretilla -->
+      <span class="col-12 bold center m-padding">
+        <a href="index.php?page=addToCart&codprd={{codprd}}" class="l-padding btn btn-primary col-12 sendToCart"> L
+          {{prcprd}}</a>
+      </span>
+      </span>
+
+    </div>
+  </section>
+  {{endfor apadrinar}}
 </section>
 </br>
 
@@ -92,6 +275,10 @@
   .infod p#p2{
     padding-top: 0rem;
     margin-bottom: 1.5rem;
+  }
+
+  .textobasico{
+    font-size: 0.9rem;
   }
 
   .card{

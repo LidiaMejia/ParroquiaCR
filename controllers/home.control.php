@@ -11,7 +11,14 @@ require_once "models/mantenimientos/productos.model.php";
 function run()
 {
     $arrDataView = array();
-    $arrDataView["productos"] = productoCatalogo();
+
+    //Tomar productos de cada categoria
+    $arrDataView["libra"] = categoriaCatalogo("LBA");
+    $arrDataView["comedor"] = categoriaCatalogo("COM");
+    $arrDataView["clinica"] = categoriaCatalogo("CLN");
+    $arrDataView["sociales"] = categoriaCatalogo("OBS");
+    $arrDataView["remodelacion"] = categoriaCatalogo("REM");
+    $arrDataView["apadrinar"] = categoriaCatalogo("ESC");
 
     //Añadir linea debajo de la pestaña que esta seleccionada en el menu
     addToContext("index","");
