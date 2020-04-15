@@ -6,11 +6,13 @@
  * @return void
  */
 
-require_once "models/mantenimientos/productos.php";
+require_once "models/mantenimientos/productos.model.php";
 
 function run()
 {
     $arrViewData = array();
+
+    $arrViewData = MostrarTransacciones();
 
     renderizar("infinito/paypal/historial", $arrViewData);
 }

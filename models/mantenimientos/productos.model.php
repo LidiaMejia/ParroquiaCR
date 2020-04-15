@@ -623,4 +623,26 @@ function crearFactura($usuario, $jsonPayment)
     return $fctcod;
 }
 
+//Historial de Transacciones
+function MostrarTransacciones()
+{
+    $sqlSel = "SELECT fd.fctcod, DATE(f.fctfch) as Fecha, u.useremail, fd.fctDsc, fd.fctCtd,
+    fd.fctPrc, f.fctTotal FROM factura_detalle fd
+    inner join factura f on fd.fctcod = f.fctcod
+	inner join usuario u on f.userCode = u.usercod;"; 
+
+    $tempArray =  obtenerRegistros($sqlSel);
+
+    $transacciones = array();
+    $transacciones["total_global"] = 0;
+
+    foreach($tempArray as $venta)
+    {
+        $transacciones["total_global"] += $venta["fctTotal"];
+        $transacciones["transacciones"][] = $venta; //Todo se guarda aqui
+    }
+
+    return $transacciones;
+}
+
 ?>

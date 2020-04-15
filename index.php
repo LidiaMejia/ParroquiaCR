@@ -271,7 +271,7 @@ case "programa":
   //*Historial de Transacciones
   case "historial":
     ($logged)?
-        include_once "controllers/paypal/historial.control.php":
+        include_once "controllers/infinito/paypal/historial.control.php":
         mw_redirectToLogin($_SERVER["QUERY_STRING"]);
   die();
 
