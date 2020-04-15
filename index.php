@@ -268,6 +268,13 @@ case "programa":
         mw_redirectToLogin($_SERVER["QUERY_STRING"]);
   die();
 
+  //*Historial de Transacciones
+  case "historial":
+    ($logged)?
+        include_once "controllers/infinito/paypal/historial.control.php":
+        mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+  die();
+
 }
 
 addToContext("pageRequest", $pageRequest);

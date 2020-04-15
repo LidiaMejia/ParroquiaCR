@@ -27,6 +27,11 @@ function generarMenu($usercod)
     {
         $menu[] = array("mdlprg"=>"parametros","mdldsc"=>"Mantenimientos");
     }
+
+    if (isAuthorized('historial', $usercod)) 
+    {
+        $menu[] = array("mdlprg"=>"historial","mdldsc"=>"Historial");
+    }
     
     addToContext('appmenu', $menu);
 }
