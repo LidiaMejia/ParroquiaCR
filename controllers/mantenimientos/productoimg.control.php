@@ -99,7 +99,7 @@ function run()
     $_SESSION['token_productosimg'] = $xrsToken;
 
     //Titulo
-    $arrViewData['titulo_img'] = "Imágenes de ".$arrViewData['skuprd']." ".$arrViewData['dscprd'];
+    $arrViewData['titulo_img'] = "Imágenes de ".$arrViewData['dscprd'];
 
     $arrViewData['hasAction'] = true;
 

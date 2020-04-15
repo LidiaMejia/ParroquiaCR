@@ -15,9 +15,9 @@ function run()
 
     $arrModeDsc = array(
         'INS' => "Nuevo Producto",
-        'UPD' => "Editando %s - %s",
-        'DEL' => "Eliminando %s - %s",
-        'DSP' => "Datos de %s - %s"
+        'UPD' => "Editando a %s",
+        'DEL' => "Eliminando a %s",
+        'DSP' => "Datos de %s"
     );
 
     $arrViewData['codprd'] = 0;
@@ -119,7 +119,7 @@ function run()
     $arrViewData['token'] = $xrsToken;
     $_SESSION['token_productos'] = $xrsToken;
 
-    $arrViewData['modedsc'] = sprintf($arrModeDsc[$arrViewData['mode']], $arrViewData['codprd'], $arrViewData['dscprd']);
+    $arrViewData['modedsc'] = sprintf($arrModeDsc[$arrViewData['mode']], $arrViewData['dscprd']);
 
     $arrViewData['catLBATrue'] = ($arrViewData['catprd'] === "LBA")? "selected" : "";
     $arrViewData['catCOMTrue'] = ($arrViewData['catprd'] === "COM")? "selected" : "";

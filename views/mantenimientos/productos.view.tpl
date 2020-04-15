@@ -1,6 +1,6 @@
 <section>
     <header>
-        <h1>Trabajar con Productos</h1>
+        <h1 class="center">Productos</h1>
     </header>
 
     <main class="row">
