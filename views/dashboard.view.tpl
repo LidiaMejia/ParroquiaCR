@@ -258,10 +258,20 @@
 </script>
 
 <style>
-
   .sec_galeria h2{
-    font-size: 1.7rem;
-  }
+  text-align: center;
+  font-size: 1.7rem;
+	margin: 1em 1em;
+	padding: 8px;
+	background-color: #f1cab6;
+	box-shadow: -5px 5px 1px #981e1b;
+	font-family: "Oswald", "Arial", sans-serif; 
+}
+
+.infod{
+	max-width: 1280px; /*1350*/
+	margin: 0px auto;
+}
 
   .infod p{
     padding-top: 1rem;

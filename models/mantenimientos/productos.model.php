@@ -645,4 +645,68 @@ function MostrarTransacciones()
     return $transacciones;
 }
 
+//***************************************************** ALBUM DE INSIGNIAS ***************************************************************/
+
+/**
+ * Obtiene las insignias que se pueden vender (Activos y Descontinuados) por categoria
+ * y las insignias que ha comprado el usuario por categoria 
+ * para mostrarlas en el Album como compradas o no y la cantidad de cada una 
+ *
+ *
+ */
+function getInsigniasAlbum($usuario, $catprd)
+{
+    //Obtener los datos a mostrar de los productos disponibles para vender
+     $sqlSelect = "SELECT codprd, dscprd, skuprd, prcprd, urlthbprd FROM productos WHERE estprd in('ACT', 'DSC') AND catprd='%s';";
+     $tempProducto = obtenerRegistros( sprintf($sqlSelect, $catprd) ); 
+
+     //Establecer en $assocProducto la llave primaria codprd para cada registro, asi se accede a cada uno por su llave sin tener que estar recorriendo el arreglo
+     $assocProducto = array();
+
+     foreach($tempProducto as $producto)
+     {
+         $assocProducto[$producto['codprd']] = $producto;
+
+         //Si no hay imagen, se coloca la de "No hay imagen disponible"
+         if(preg_match('/^\s*$/', $producto["urlthbprd"]))
+         {
+             $assocProducto[$producto['codprd']['urlthbprd']] = "public/imgs/noprodthb.png";
+         }
+
+         //Cambiar cantidad de productos disponibles por 0 asumiendo que no ha comprado ninguna  
+         //porque despues se actualizara la cantidad solo de las que si estan compradas.
+         //De igual forma se coloca que no tiene esa insignia y despues se actualiza.
+         $assocProducto[$producto['codprd']]['cantprd'] = 0;
+         $assocProducto[$producto['codprd']]['hasInsignia'] = false;
+     }
+
+     //Obtener Insignias que ha comprado el usuario logueado
+     $sqlSelect = "SELECT p.codprd, p.skuprd, p.dscprd, fd.fctCtd as 'cantidad'
+                FROM productos p 
+                INNER JOIN factura_detalle fd ON p.codprd = fd.codprd
+                INNER JOIN factura f ON f.fctcod = fd.fctcod
+                INNER JOIN usuario u ON u.usercod = f.userCode
+                WHERE u.usercod = %d AND p.catprd = '%s'
+                GROUP BY p.codprd;";
+
+     $tempInsignia = obtenerRegistros(
+         sprintf($sqlSelect, $usuario, $catprd)
+     );
+
+     //Recorrer insignias compradas para ver si estan en el catalogo y mostrarlas
+     foreach($tempInsignia as $insignia)
+     { 
+         if(isset($assocProducto[$insignia['codprd']]))
+         {
+             //Agrego a cada fila donde hay una coincidencia que si tiene esa insignia
+             $assocProducto[$insignia['codprd']]['hasInsignia'] = true;
+
+             //Cambiar cantidad de productos disponibles por cantidad comprada
+             $assocProducto[$insignia['codprd']]['cantprd'] = $insignia['cantidad'];
+         }
+     }
+
+     return $assocProducto;
+}
+
 ?>

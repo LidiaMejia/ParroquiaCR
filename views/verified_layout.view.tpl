@@ -7,7 +7,6 @@
             <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
             <link rel="stylesheet" href="public/css/papier.css" />
             <link rel="stylesheet" href="public/css/estilo.css" />
-            <link rel="stylesheet" href="public/css/estilos.css" />
             <link rel="stylesheet" href="public/css/principalsacra.css" />
 
             <script src="public/js/jquery.min.js"></script>
