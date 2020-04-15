@@ -21,12 +21,12 @@ CREATE TABLE `parroquia`.`carretilla` (
   INDEX `codprd_idx` (`codprd` ASC),
   CONSTRAINT `carretilla_user_key`
     FOREIGN KEY (`usercod`)
-    REFERENCES `dynapolls`.`usuario` (`usercod`)
+    REFERENCES `parroquia`.`usuario` (`usercod`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `carretilla_prd_key`
     FOREIGN KEY (`codprd`)
-    REFERENCES `dynapolls`.`productos` (`codprd`)
+    REFERENCES `parroquia`.`productos` (`codprd`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 

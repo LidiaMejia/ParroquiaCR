@@ -505,5 +505,18 @@ function cleanTimeOutCart()
     return $contador;
 }
 
+function MostrarTransacciones()
+{
+    $sqlSel = "SELECT u.useremail as Usuario, p.dscprd as Descripcion, fd.fctCtd as Cantidad, fd.fctPrc as Precio, f.fctcod as Codigo_Factura, f.fctfch as Fecha_Factura, 
+    f.fctMonto as Monto_Factura, f.fctTotal as Total_Factura FROM factura f
+    inner join factura_detalle fd on f.fctcod = fd.fctcod
+    inner join productos p on fd.codprd = p.codprd
+    inner join carretilla c on p.codprd = c.codprd
+    inner join usuario u on  c.usercod = u.usercod;
+    "
+
+    return ejecutarNonQuery();
+}
+
 
 ?>
