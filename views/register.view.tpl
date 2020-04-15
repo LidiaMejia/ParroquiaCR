@@ -8,7 +8,7 @@
 
     <!-- CSS -->
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans:400,700'>
-    <link rel="stylesheet" href="public/css/reset.css">
+    <!-- <link rel="stylesheet" href="public/css/reset.css"> -->
     <link rel="stylesheet" href="public/css/supersized.css">
     <link rel="stylesheet" href="public/css/style.css">
 
@@ -21,11 +21,7 @@
 
 <body>
 
-        <fieldset class="row right">
-            <button id="btnNuevaCuenta">Nueva Cuenta</button> &nbsp;
-        </fieldset>
-    </form>
-</main>
+
 
   <form action="" method="post" id="formRegister">
 
@@ -42,10 +38,11 @@
     <div class="page-container">
         <h1 class="h1"><font color="black">Crear Nueva Cuenta</font></h1>
 
-            <input type="text" name="username" class="username" placeholder="Correo Electrónico">
-            <input type="password" name="password" class="password" placeholder="Contraseña">
-            <input type="password" name="password" class="password" placeholder="Confirmar Contraseña">
-            <button id="btnNuevaCuenta" class="col-md-12">Nueva Cuenta</button> &nbsp;
+            <input type="text" name="userName" value="{{userName}}" placeholder="Nombre Completo" id="userName"><br><br>
+            <input type="text" name="userEmail" value="{{userEmail}}" placeholder="Correo Electronico" id="userEmail"><br><br>
+            <input type="password" name="password" value="{{password}}" placeholder="Contraseña" id="password" ><br><br>
+            <input type="password" name="passwordCnf" value="{{passwordCnf}}" placeholder="Confirmar Contraseña" id="passwordCnf" ><br>
+            <button id="btnNuevaCuenta" class="col-md-12">&nbsp; Nueva Cuenta</button>
 
         </form>
 
@@ -61,7 +58,6 @@
 
 <script>
     var btnNuevaCuenta = document.getElementById("btnNuevaCuenta");
-
     btnNuevaCuenta.addEventListener("click", function(e)
     {
         e.preventDefault();
@@ -125,6 +121,7 @@
             errors = true;
             $("#passwordCnfError").html('Las contraseñas no coinciden').addClass("error col-8 col-offset-4");
         }
+
 
         /* SI NO HAY ERRORES, SE MANDA EL FORMULARIO */
         if(!errors)
