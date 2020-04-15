@@ -261,6 +261,13 @@ case "programa":
     mw_redirectToLogin($_SERVER["QUERY_STRING"]);
   die();
 
+  //*Album
+  case "album":
+    ($logged)?
+        include_once "controllers/infinito/album.control.php":
+        mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+  die();
+
 }
 
 addToContext("pageRequest", $pageRequest);
