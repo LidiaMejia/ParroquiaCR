@@ -21,10 +21,8 @@
 
 <body>
 
-
-
-  <form action="" method="post" id="formRegister">
-
+  <form action="index.php?page=register" method="post" id="formRegister">
+    <input type="hidden" name="token" value="{{token}}" />
     {{if hasErrors}}
         <div class="alert alert-danger">
             <ul>
@@ -37,14 +35,12 @@
 
     <div class="page-container">
         <h1 class="h1"><font color="black">Crear Nueva Cuenta</font></h1>
-
             <input type="text" name="userName" value="{{userName}}" placeholder="Nombre Completo" id="userName"><br><br>
             <input type="text" name="userEmail" value="{{userEmail}}" placeholder="Correo Electronico" id="userEmail"><br><br>
             <input type="password" name="password" value="{{password}}" placeholder="Contraseña" id="password" ><br><br>
             <input type="password" name="passwordCnf" value="{{passwordCnf}}" placeholder="Confirmar Contraseña" id="passwordCnf" ><br>
             <button id="btnNuevaCuenta" class="col-md-12">&nbsp; Nueva Cuenta</button>
-
-        </form>
+   </form>
 
     </div>
 
@@ -138,13 +134,10 @@
 
 <style>
 
-.password{
+#password, #userName, #userEmail, #passwordCnf{
   background-color: white;
 }
 
-.username{
-  background-color: white;
-}
 
 .col-md-12{
   background-color: #c18907;

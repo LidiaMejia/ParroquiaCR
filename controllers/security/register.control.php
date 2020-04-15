@@ -33,6 +33,7 @@ function run()
         if( isset($_POST['token']) && isset($_SESSION['token_register']) && $_POST['token'] === $_SESSION['token_register'] )
         {
             //Refresh variables del form
+            $arrViewData['userName'] = $_POST['userName'];
             $arrViewData['userEmail'] = $_POST['userEmail'];
             $arrViewData['password'] = $_POST['password'];
             $arrViewData['passwordCnf'] = $_POST['passwordCnf'];
@@ -81,7 +82,7 @@ function run()
                     $pswdSalted = md5($pswdSalted);
 
                     //Insertar Usuario a la Base
-                    $result = insertUsuario('', $arrViewData['userEmail'], $fchIngreso, $pswdSalted, $arrViewData['userType']);
+                    $result = insertUsuario($arrViewData['userName'], $arrViewData['userEmail'], $fchIngreso, $pswdSalted, $arrViewData['userType']);
                     
                     //Si se inserto correctamente
                     if($result)
@@ -90,7 +91,7 @@ function run()
                         //agregarRolaUsuario('Publico', $result);
 
                         //Aqui se pueden agregar roles especificos
-                        agregarRolaUsuario('CMP', $result); //Comprador
+                        //agregarRolaUsuario('CMP', $result); //Comprador
 
                         redirectWithMessage("Cuenta Creada Satisfactoriamente, Favor Ingresar", "index.php?page=login");
                     }
