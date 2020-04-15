@@ -1,8 +1,15 @@
 <!-- Por cada producto se mostrara una cartita en el inicio de la pagina -->
 
-<h1>¡Frase motivadora para Donar XD!</h1>
+<section class="sec_galeria">
+  <h2>¡Tú puedes brindar tu luz a los demás!</h2>
+</section>
 
-<section class="card row">
+<section class="infod">
+  <p>Al comprar las insignias de tus Santos favoritos estarás contribuyendo a cada una de las obras dentro de nuestra parroquia.</p>
+  <p id="p2">Podrás revisar tus insignias en el Álbum al iniciar sesión. ¡Completa toda la colección y presúmela con nosotros en nuestras redes sociales!</p>
+</section>
+
+<section class="card row"> 
   <h2>Categoria 1</h2>
   {{foreach productos}}
     <section class="col-sm-6 col-md-3 m-padding">
@@ -24,7 +31,7 @@
 
           <!-- Boton para añadir a la carretilla -->
           <span class="col-12 bold center m-padding">
-            <a href="index.php?page=addToCart&codprd={{codprd}}" class="l-padding btn btn-primary col-12 sendToCart"> L {{prcprd}}  </a>
+            <a href="index.php?page=addToCart&codprd={{codprd}}" class="l-padding btn btn-primary col-12 sendToCart"> L {{prcprd}}</a>
           </span>
         </span>
 
@@ -100,6 +107,25 @@
 </script>
 
 <style>
+  .sec_galeria{
+      margin-top: 7rem;
+  }
+
+  .sec_galeria h2{
+    font-size: 1.7rem;
+  }
+
+  .infod p{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem; 
+  }
+
+  .infod p#p2{
+    padding-top: 0rem;
+    margin-bottom: 1.5rem;
+  }
+
   .card{
     position: relative;
   }
@@ -137,6 +163,10 @@
 
   .col-112{
     background-color: white;
+  }
+
+  .sendToCart{
+    text-decoration: none;
   }
 
 
