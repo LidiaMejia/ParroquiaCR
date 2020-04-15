@@ -28,6 +28,18 @@
 
     $arrViewData = getDetailCartAnon($cartAnonUID); //La funcion trae un array con los datos y el nombre del atributo que se llama en el view para mostrar
 
+    addToContext("index","");
+    addToContext("nosotros","");
+    addToContext("sacramentos","");
+    addToContext("dimensiones","");
+    addToContext("pastorales","");
+    addToContext("plataforma","");
+    addToContext("servicios","");
+    addToContext("home","");
+    addToContext("login","");
+    addToContext("register","");
+    addToContext("cart","active");
+    
     renderizar("infinito/cart", $arrViewData); //ANONIMA Y AUTENTICADA COMPARTEN LA MISMA VIEW
  }
 

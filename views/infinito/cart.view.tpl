@@ -1,5 +1,5 @@
 <section>
- <script src="https://code.iconify.design/1/1.0.5/iconify.min.js"></script>
+ 
   <header>
       <h1 class="center"><span class="ion-ios-cart s2"></span>&nbsp; Mi Carretilla de Compra</h1>
   </header>
@@ -31,9 +31,9 @@
                 <td class="right">{{total}}</td>
                 <!-- Botones para remover una unidad de un producto o añadir una mas -->
                 <td class="center ">
-                    <a href="index.php?page=rmvtocart&codprd={{codprd}}" class="btn s-padding mdftocart"><span class="iconify" data-icon="el:minus" data-inline="false"></span></a>
+                    <a href="index.php?page=rmvToCart&codprd={{codprd}}" class="btn s-padding mdftocart"><span class="iconify" data-icon="el:minus" data-inline="false"></span></a>
                     &nbsp;
-                    <a href="index.php?page=addtocart&codprd={{codprd}}" class="btn s-padding mdftocart"><span class="iconify" data-icon="el:plus" data-inline="false"></span></a>
+                    <a href="index.php?page=addToCart&codprd={{codprd}}" class="btn s-padding mdftocart"><span class="iconify" data-icon="el:plus" data-inline="false"></span></a>
                 </td>
             </tr>
           {{endfor products}}
@@ -44,7 +44,7 @@
             <!-- Si hay productos en la carretilla que muestre un boton que redirige al controlador para borrarla toda -->
             <td colspan="2" class="center">
               {{if totctd}}
-                <a class="btn m-padding bg-red center rmvcart" href="index.php?page=rmvallcart"> <span class="ion-trash-b s4"></span> &nbsp;Cancelar </a>
+                <a class="btn m-padding bg-red center rmvcart" href="index.php?page=rmvAllCart"> <span class="ion-trash-b s4"></span> &nbsp;Cancelar </a>
               {{endif totctd}}
             </td>
             <td class="right"><strong>Total</strong></td>
@@ -54,7 +54,7 @@
             <td class="pay">
                 <!-- Boton para ir al Checkout a pagar. SOLO APARECE CUANDO HAY PRODUCTOS EN LA CARRETILLA -->
                 {{if totctd}}
-                  <a href="checkout" class="btn btn-primary m-padding bg-green"><span class="iconify" data-icon="fa-solid:cash-register"></span>&nbsp;Pagar</a>
+                  <a href="index.php?page=checkout" class="btn btn-primary m-padding bg-green"><span class="iconify" data-icon="fa-solid:cash-register"></span>&nbsp;Pagar</a>
                 {{endif totctd}}
             </td>
           </tr>
@@ -88,9 +88,23 @@
 </script>
 
 <style>
+h1{
+  margin-top: 8rem;
+}
+
+.row{
+  margin-top: 1rem;
+  margin-bottom: 7.7rem;
+}
+
 .bg-green{
   background-color: green;
   justify-content: center;
+  text-decoration: none;
+}
+
+.bg-red{
+  text-decoration: none;
 }
 
 .pay{

@@ -13,7 +13,7 @@ function run()
     $usuario = $_SESSION["userCode"];
 
     $arrDataView = array();
-    $arrDataView = getAuthCartDetail($usuario);
+    $arrDataView = getDetailCartAut($usuario);
 
     renderizar("infinito/cart", $arrDataView);
 }

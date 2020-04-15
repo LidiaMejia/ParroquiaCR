@@ -7,7 +7,10 @@
             <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
             <link rel="stylesheet" href="public/css/papier.css" />
             <link rel="stylesheet" href="public/css/estilo.css" />
+
             <script src="public/js/jquery.min.js"></script>
+            <script src="https://code.iconify.design/1/1.0.5/iconify.min.js"></script>
+
             {{foreach css_ref}}
                 <link rel="stylesheet" href="{{uri}}" />
             {{endfor css_ref}}
@@ -25,6 +28,11 @@
                       <li><a href="index.php?page={{mdlprg}}">{{mdldsc}}</a></li>
                     {{endfor appmenu}}
                     <li><a href="index.php?page=logout">Cerrar Sesión</a></li>
+                    <!-- Icono carrito de compra. Si se agrega un producto se aumenta el contador y se muestra la cantidad.
+                         Como es la vista privada del menu, si le da clic activa el controlador de carretilla autenticada -->
+                    {{if cartEntries}} 
+                        <li><a href="index.php?page=cartAut" class="{{cart}}"><span class="ion-ios-cart"></span> <span id="cartcounter">{{cartEntries}}</span></a></li>
+                    {{endif cartEntries}}
                 </ul>
                 <div class="hbtn"> <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div></div>
             </div>

@@ -129,6 +129,7 @@ function run()
     addToContext("home","");
     addToContext("login","");
     addToContext("register","active");
+    addToContext("cart","");
     
     renderizar("register", $arrViewData);
 }

@@ -218,6 +218,11 @@ case "programa":
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
  die();
 
+ //*Carretilla
+  case "cartAut":
+    include_once "controllers/infinito/cartAut.control.php";
+  die();
+
  //*Checkout
  case "checkout":
     ($logged)?

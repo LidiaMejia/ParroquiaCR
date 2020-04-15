@@ -22,7 +22,8 @@ function run()
     addToContext("servicios","");
     addToContext("home","");
     addToContext("login","active");
-    addToContext("register",""); 
+    addToContext("register","");
+    addToContext("cart","active"); 
 
     addJsRef('public/js/jquery-1.8.2.min.js');
     addJsRef('public/js/supersized.3.2.7.min.js');

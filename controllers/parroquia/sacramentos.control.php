@@ -25,6 +25,7 @@
     addToContext("home","");
     addToContext("login","");
     addToContext("register","");
+    addToContext("cart","");
 
     renderizar("parroquia/sacramentos", $arrViewData); 
  }  

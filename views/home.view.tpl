@@ -24,7 +24,7 @@
 
           <!-- Boton para añadir a la carretilla -->
           <span class="col-12 bold center m-padding">
-            <a href="index.php?page=addtocart&codprd={{codprd}}" class="l-padding btn btn-primary col-12 sendToCart"> L {{prcprd}}  </a>
+            <a href="index.php?page=addToCart&codprd={{codprd}}" class="l-padding btn btn-primary col-12 sendToCart"> L {{prcprd}}  </a>
           </span>
         </span>
 

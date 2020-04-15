@@ -24,6 +24,7 @@ function run()
     addToContext("home","active");
     addToContext("login","");
     addToContext("register","");
+    addToContext("cart","");
 
     renderizar("home", $arrDataView); 
 }

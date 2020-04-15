@@ -16,7 +16,6 @@
             <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,800" rel="stylesheet">
             <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans:400,700'>
-
             
             <link rel="stylesheet" href="public/css/papier.css" />
             <!-- <link rel="stylesheet" href="public/css/estilo.css" /> -->
@@ -25,10 +24,10 @@
             <link rel="stylesheet" href="public/css/principalsacra.css" />
             <link rel="stylesheet" href="public/css/stylePastoraleso.css" />
              
-
             <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
             <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
             <script src="public/js/jquery.min.js"></script>
+            <script src="https://code.iconify.design/1/1.0.5/iconify.min.js"></script>
             
             {{foreach css_ref}}
                 <link rel="stylesheet" href="{{uri}}" />
@@ -56,6 +55,11 @@
                         <a href="index.php?page=home" class="{{home}}">Donación</a>
                         <a href="index.php?page=login" class="{{login}}">Iniciar Sesión</a>
                         <a href="index.php?page=register" class="{{register}}">Crear Cuenta</a>
+                        <!-- Icono carrito de compra. Si se agrega un producto se aumenta el contador y se muestra la cantidad.
+                             Como es la vista publica del menu, si le da clic activa el controlador de carretilla anonima -->
+                        {{if cartEntries}}
+                            <a href="index.php?page=cartAnon" class="{{cart}}"><span class="ion-ios-cart"></span> <span id="cartcounter">{{cartEntries}}</span></a>
+                        {{endif cartEntries}}
                     </div>
                     <div class="hamburguer">
                         <i class="fas fa-bars"></i>

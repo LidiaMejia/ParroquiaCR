@@ -19,9 +19,10 @@
      addToContext("pastorales","");
      addToContext("plataforma","");
      addToContext("servicios","");
-    addToContext("home","");
-    addToContext("login","");
-    addToContext("register","");
+     addToContext("home","");
+     addToContext("login","");
+     addToContext("register","");
+     addToContext("cart","");
 
      renderizar("parroquia/index",$arrViewData);
  }
