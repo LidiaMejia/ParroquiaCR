@@ -78,18 +78,18 @@ function deleteProducto($codprd)
     );
 }
 
-//Colocar Imagen del Producto
-function setImageProducto($url, $codprd, $type="PRT")
-{
+  //Guardar Imagen para el Producto (Ambas Imagenes)
+ function setImageProducto($url, $codprd, $type="PRT")
+ {
     $sqlUpdatePRT = "UPDATE productos SET urlprd = '%s' WHERE codprd = %d;";
     $sqlUpdateTHB = "UPDATE productos SET urlthbprd = '%s' WHERE codprd = %d;";
 
-    $sqlUpdate = ($type === "PRT") ? $sqlUpdatePRT : $sqlUpdateTHB;
+    $sqlUpdate = ($type === "PRT")? $sqlUpdatePRT : $sqlUpdateTHB;
 
     return ejecutarNonQuery(
         sprintf($sqlUpdate, $url, $codprd)
     );
-}
+ }
 
 
 //******************************************************* CATALOGO ************************************************************************/
@@ -99,6 +99,28 @@ function productoCatalogo()
 {
     $sqlSelect = "SELECT codprd, dscprd, skuprd, urlthbprd, prcprd
                   from productos where estprd in('ACT','DSC');";
+
+    $tmpProducto =  obtenerRegistros($sqlSelect);    
+    $assocProducto = array();
+
+    foreach ($tmpProducto as $producto) 
+    {
+        //Imagen predeterminada si no hay imagen
+        $assocProducto[$producto["codprd"]] = $producto;
+
+        if (preg_match('/^\s*$/', $producto["urlthbprd"])) 
+        {
+            $assocProducto[$producto["codprd"]]["urlthbprd"] = "public/imgs/noprodthb.png"; //Insertar la direccion de la imagen------------
+        }
+    }
+  
+    return $assocProducto;
+}
+
+function categoriaCatalogo($catprd)
+{
+    $sqlSelect = "SELECT codprd, dscprd, skuprd, urlthbprd, prcprd
+                  from productos where catprd = '%s' and estprd in('ACT','DSC');";
 
     $tmpProducto =  obtenerRegistros($sqlSelect);    
     $assocProducto = array();
@@ -597,29 +619,5 @@ function crearFactura($usuario, $jsonPayment)
     //Retornar codigo de factura que se acaba de crear
     return $fctcod;
 }
-
-function categoriaCatalogo($catprd)
-{
-    $sqlSelect = "SELECT codprd, dscprd, skuprd, urlthbprd, prcprd
-                  from productos where catprd = '%s' and estprd in('ACT','DSC');";
-
-    $tmpProducto =  obtenerRegistros($sqlSelect);    
-    $assocProducto = array();
-
-    foreach ($tmpProducto as $producto) 
-    {
-        //Imagen predeterminada si no hay imagen
-        $assocProducto[$producto["codprd"]] = $producto;
-
-        if (preg_match('/^\s*$/', $producto["urlthbprd"])) 
-        {
-            $assocProducto[$producto["codprd"]]["urlthbprd"] = "public/imgs/noprodthb.png"; //Insertar la direccion de la imagen------------
-        }
-    }
-  
-    return $assocProducto;
-}
-
-
 
 ?>

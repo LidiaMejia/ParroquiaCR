@@ -8,7 +8,6 @@
 
 require_once "models/mantenimientos/productos.model.php";
 
-///////////////////////////////// CAMBIAR TYPE POR CATEGORIA!!!!!!!!!!!!!!!!!! /////////////////////////////////////
 
 function run()
 {
@@ -27,11 +26,13 @@ function run()
     $arrViewData['ldscprd'] = '';
     $arrViewData['skuprd'] = '';
 
-    ////////// MODIFICAR CON CATEGORIAS!!!!!!
     $arrViewData['catprd'] = '';
-    $arrViewData['typeLBATrue'] = '';
-    $arrViewData['typeCOMTrue'] = '';
-    $arrViewData['typeCLNTrue'] = '';
+    $arrViewData['catLBATrue'] = '';
+    $arrViewData['catCOMTrue'] = '';
+    $arrViewData['catCLNTrue'] = '';
+    $arrViewData['catOBSTrue'] = '';
+    $arrViewData['catREMTrue'] = '';
+    $arrViewData['catESCTrue'] = '';
 
     $arrViewData['prcprd'] = 0;
     $arrViewData['urlprd'] = '';
@@ -120,9 +121,12 @@ function run()
 
     $arrViewData['modedsc'] = sprintf($arrModeDsc[$arrViewData['mode']], $arrViewData['codprd'], $arrViewData['dscprd']);
 
-    $arrViewData['typeLBATrue'] = ($arrViewData['catprd'] === "LBA")? "selected" : "";
-    $arrViewData['typeCOMTrue'] = ($arrViewData['catprd'] === "COM")? "selected" : "";
-    $arrViewData['typeCLNTrue'] = ($arrViewData['catprd'] === "CLN")? "selected" : "";
+    $arrViewData['catLBATrue'] = ($arrViewData['catprd'] === "LBA")? "selected" : "";
+    $arrViewData['catCOMTrue'] = ($arrViewData['catprd'] === "COM")? "selected" : "";
+    $arrViewData['catCLNTrue'] = ($arrViewData['catprd'] === "CLN")? "selected" : "";
+    $arrViewData['catOBSTrue'] = ($arrViewData['catprd'] === "OBS")? "selected" : "";
+    $arrViewData['catREMTrue'] = ($arrViewData['catprd'] === "REM")? "selected" : "";
+    $arrViewData['catESCTrue'] = ($arrViewData['catprd'] === "ESC")? "selected" : "";
 
     $arrViewData['estACTTrue'] = ($arrViewData['estprd'] === "ACT")? "selected" : "";
     $arrViewData['estINATrue'] = ($arrViewData['estprd'] === "INA")? "selected" : "";

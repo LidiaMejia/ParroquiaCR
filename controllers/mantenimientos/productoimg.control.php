@@ -44,15 +44,21 @@ function run()
     {
         if (isset($_POST['token']) && isset($_SESSION['token_productosimg']) && $_POST['token'] === $_SESSION['token_productosimg']) 
         {
-
             $arrViewData['codprd'] = intval($_POST['codprd']);
 
+            //var_dump($_FILES); 
+            //die();
+
+//             echo "<pre>"; 
+//    print_r($_FILES); 
+//    echo "</pre>";
+//    die();
             //Imagen de Portada (480x480)
             //Si se subio un archivo y se dio clic en Guardar
             if (isset($_FILES["uploadUrlPrd"]) && isset($_POST["btnGuardarUrlPrd"])) 
             {
                 //Obtenemos los datos necesarios para generar el registro
-                $udir = "public/prods/"; // directorio a donde guardaremos el documento
+                $udir = "public/produc/"; // directorio a donde guardaremos el documento
                 $fname = basename($_FILES["uploadUrlPrd"]["name"]); //El nombre del archivo
                 $fsize = $_FILES["uploadUrlPrd"]["size"]; //tamaño en bytes
                 //Se puede validar el tamano del archivo
@@ -69,7 +75,7 @@ function run()
             if (isset($_FILES["uploadUrlThbPrd"]) && isset($_POST["btnGuardarUrlThbPrd"])) 
             {
                 //Obtenemos los datos necesarios para generar el registro
-                $udir = "public/prods/"; // directorio a donde guardaremos el documento
+                $udir = "public/produc/"; // directorio a donde guardaremos el documento
                 $fname = basename($_FILES["uploadUrlThbPrd"]["name"]); //El nombre del archivo
                 $fsize = $_FILES["uploadUrlThbPrd"]["size"]; //tamaño en bytes
                 //Se puede validar el tamano del archivo
@@ -93,7 +99,7 @@ function run()
     $_SESSION['token_productosimg'] = $xrsToken;
 
     //Titulo
-    $arrViewData['modedsc'] = "Imágenes de ".$arrViewData['skuprd']." ".$arrViewData['dscprd'];
+    $arrViewData['titulo_img'] = "Imágenes de ".$arrViewData['skuprd']." ".$arrViewData['dscprd'];
 
     $arrViewData['hasAction'] = true;
 

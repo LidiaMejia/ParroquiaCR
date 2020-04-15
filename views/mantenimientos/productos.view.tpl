@@ -11,7 +11,6 @@
                         <th>Código</th>
                         <th>Descripción</th>
                         <th>Código Interno</th>
-                        <th>Código de Barra</th>
                         <th>Categoría</th>
                         <th>Precio</th>
                         <th class="center">Imagen</th>
@@ -26,7 +25,6 @@
                         <td>{{codprd}}</td>
                         <td>{{dscprd}}</td>
                         <td>{{skuprd}}</td>
-                        <td>{{bcdprd}}</td>
                         <td>{{catprd}}</td>
                         <td>{{prcprd}}</td>
 
