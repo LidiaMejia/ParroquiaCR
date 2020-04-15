@@ -228,16 +228,19 @@ case "programa":
     ($logged)?
     include_once "controllers/infinito/paypal/checkout.control.php":
     mw_redirectToLogin($_SERVER["QUERY_STRING"]); 
+  die();
 
  case "checkoutappr":
     ($logged)?
     include_once "controllers/infinito/paypal/checkoutapproved.control.php":
     mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+  die();  
 
  case "checkoutcancel":
     ($logged)?
     include_once "controllers/infinito/paypal/checkoutcancel.control.php":
     mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+  die();
 
 }
 

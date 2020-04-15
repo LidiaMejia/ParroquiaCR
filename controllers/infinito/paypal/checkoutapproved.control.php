@@ -1,4 +1,7 @@
 <?php
+
+require_once "models/paypal/paypal.model.php";
+
 /**
  * Controlador cuando paypal manda una aprobación del usuario
  * se debe  procesar el pago ejecutandolo y creando la factura
@@ -6,8 +9,6 @@
  * @return void
  */
 
-
-require_once 'models/paypal/paypal.model.php';
 
 function run()
 {

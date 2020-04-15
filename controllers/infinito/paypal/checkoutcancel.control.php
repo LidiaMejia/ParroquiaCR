@@ -8,8 +8,11 @@
 
 function run()
 {
-    renderizar("infinito/paypal/checkoutcancel", array());
+    $arrViewData = array();
+
+    renderizar("infinito/paypal/checkoutcancel", $arrViewData);
 }
+
 run();
 
 ?>

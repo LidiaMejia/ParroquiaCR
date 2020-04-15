@@ -7,7 +7,7 @@
   <br/>
   <section class="row">
     <section class="col-12 col-md-8 col-offset-2">
-      <table class="full-width ">
+      <table class="full-width">
         <thead>
           <tr class="doradito">
             <th>Linea</th>

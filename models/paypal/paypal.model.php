@@ -7,13 +7,13 @@
 
 require_once 'libs/paypal.php';
 
-//use para que no de error en clase Payment, linea 91 
+//use para que no de error en clase Payment
 use PayPal\Api\Payment;
 use PayPal\Api\PaymentExecution;
 
 
 //Crear la Transaccion del Pago a realizar
-function createPaypalTransacction( $_amount , $_items )
+function createPaypalTransaction( $_amount , $_items )
 {
     $apiContext = getApiContext(); //credenciales
     $payer = new \PayPal\Api\Payer();

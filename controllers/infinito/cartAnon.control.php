@@ -40,7 +40,7 @@
     addToContext("register","");
     addToContext("cart","active");
     
-    renderizar("infinito/cart", $arrViewData); //ANONIMA Y AUTENTICADA COMPARTEN LA MISMA VIEW
+    renderizar("infinito/cartAnon", $arrViewData);
  }
 
  run();

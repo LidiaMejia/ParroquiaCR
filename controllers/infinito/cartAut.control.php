@@ -15,7 +15,7 @@ function run()
     $arrDataView = array();
     $arrDataView = getDetailCartAut($usuario);
 
-    renderizar("infinito/cart", $arrDataView);
+    renderizar("infinito/cartAut", $arrDataView);
 }
 
 run();
