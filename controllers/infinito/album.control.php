@@ -21,12 +21,12 @@
 
     //$arrViewData["productos"] = getInsigniasAlbum($usuario); //ProductoCatalogo();
    //Tomar productos comprados de cada categoria
-    $arrDataView["libra"] = getInsigniasAlbum($usuario, "LBA");
-    $arrDataView["comedor"] = getInsigniasAlbum($usuario, "COM");
-    $arrDataView["clinica"] = getInsigniasAlbum($usuario, "CLN");
-    $arrDataView["sociales"] = getInsigniasAlbum($usuario, "OBS");
-    $arrDataView["remodelacion"] = getInsigniasAlbum($usuario, "REM");
-    $arrDataView["apadrinar"] = getInsigniasAlbum($usuario, "ESC");
+    $arrViewData["libra"] = getInsigniasAlbum($usuario, "LBA");
+    $arrViewData["comedor"] = getInsigniasAlbum($usuario, "COM");
+    $arrViewData["clinica"] = getInsigniasAlbum($usuario, "CLN");
+    $arrViewData["sociales"] = getInsigniasAlbum($usuario, "OBS");
+    $arrViewData["remodelacion"] = getInsigniasAlbum($usuario, "REM");
+    $arrViewData["apadrinar"] = getInsigniasAlbum($usuario, "ESC");
 
     renderizar("infinito/album", $arrViewData); 
  }

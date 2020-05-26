@@ -681,7 +681,7 @@ function getInsigniasAlbum($usuario, $catprd)
      }
 
      //Obtener Insignias que ha comprado el usuario logueado
-     $sqlSelect = "SELECT p.codprd, p.skuprd, p.dscprd, fd.fctCtd as 'cantidad'
+     $sqlSelect = "SELECT p.codprd, p.skuprd, p.dscprd, sum(fd.fctCtd) as 'cantidad'
                 FROM productos p 
                 INNER JOIN factura_detalle fd ON p.codprd = fd.codprd
                 INNER JOIN factura f ON f.fctcod = fd.fctcod
