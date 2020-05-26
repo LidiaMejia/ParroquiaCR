@@ -12,6 +12,10 @@ function run()
 {
     $arrDataView = array();
 
+    $arrDataView['page_title'] = "Donaciones";
+    addJsRef("public/js/main.js");
+    addJsRef('public/js/mainindex.js');
+
     //Tomar productos de cada categoria
     $arrDataView["libra"] = categoriaCatalogo("LBA");
     $arrDataView["comedor"] = categoriaCatalogo("COM");

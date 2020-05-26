@@ -29,6 +29,8 @@ function run()
     addJsRef('public/js/supersized.3.2.7.min.js');
     addJsRef('public/js/supersized-init.js');
     addJsRef('public/js/scripts.js');
+    addJsRef("public/js/main.js");
+    addJsRef('public/js/mainindex.js');
 
     addCssRef('public/css/reset.css');
     addCssRef('public/css/supersized.css');
@@ -39,7 +41,8 @@ function run()
       "tocken" => "",
       "txtEmail"=>"",
       "showerrors"=>false,
-      "returnto"=>"?page=dashboard"
+      "returnto"=>"?page=dashboard",
+      "page_title" => "Inicio de Sesión" 
     );
     if ($_SERVER["REQUEST_METHOD"] === "GET") {
         $loginData["tocken"] = md5("loginentry".time());

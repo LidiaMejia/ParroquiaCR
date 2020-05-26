@@ -13,6 +13,8 @@ function run()
 {
     //Se traen los nombres de los datos de la funcion de Ingresar Nuevo Usuario de security
     $arrViewData = array();
+
+    $arrViewData['page_title'] = "Crear Cuenta";
     
     $arrViewData['userName'] = '';
     $arrViewData['userEmail'] = '';
@@ -117,7 +119,9 @@ function run()
 
     //libs / Utilities
     //hay una funcion para poder agregar una js (Se escribe su ruta relativa)
-    addJsRef('public/js/validators.js'); 
+    addJsRef('public/js/validators.js');
+    addJsRef("public/js/main.js");
+    addJsRef('public/js/mainindex.js'); 
 
     //Añadir linea debajo de la pestaña que esta seleccionada en el menu
     addToContext("index","");
